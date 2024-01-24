@@ -16,6 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>
+          cse-alumni-site
+        </title>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
