@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import LandingScreen from "./components/LandingPage";
+import LandingScreen from "./components/Header/Header";
 
 
 

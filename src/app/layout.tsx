@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import LandingScreen from "./components/LandingPage";
+import LandingScreen from "./components/LandingPage/LandingPage";
 
 
 export const metadata: Metadata = {
