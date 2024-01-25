@@ -1,11 +1,20 @@
 import HeaderTem from "../Header/Header"
+import { Carousel } from "react-bootstrap";
+
+import React, { useState } from "react";
+
+
 export default function LandingScreen() {
+
+
+  
+
     return (
-      
+    <div>
       <div>
-        <HeaderTem></HeaderTem>
-        <p>Hi amaonwdoin</p>
+      
       </div>
+    </div>
     );
   }
   

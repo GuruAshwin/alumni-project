@@ -1,0 +1,18 @@
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.headContainer {
+    width: max-content;
+}
+
+.MainContainer {
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+}
