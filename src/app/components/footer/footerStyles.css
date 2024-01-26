@@ -1,0 +1,62 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+.logoImg {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+  }
+
+  .logo-text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+    padding: 20px;
+  }
+  .logo-text h1{
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight:bolder;
+    flex: 2;
+  }
+  .logo-text h4{
+    font-size: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    flex: 1;
+  }
+
+  .footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #2D3250;
+    gap: 300px;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact p {
+    color:aliceblue;
+  }
+
+  .features {
+    text-align: center;
+  }
+
+  .features p{
+    color: aliceblue;
+  }
