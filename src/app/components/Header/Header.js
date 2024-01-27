@@ -1,6 +1,9 @@
+
 import React from "react";
 import "./Header.css"
-import { ButtonGroup, Dropdown, DropdownButton} from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import { redirect } from "next/dist/server/api-utils";
+import { usePathname } from "next/navigation";
 
 export default function HeaderTem() {
 
@@ -22,13 +25,22 @@ export default function HeaderTem() {
               </div>
         </div>
       <div className="buttoncontainer">
-        <button className="buttonStyles">
+        <button className="buttonStyles" >
           LOGIN
         </button>
       </div>
     </div>
     <div className="menuBar">
-        <div>
+        <div className="nav">
+          {['HOME', 'AWARDS', 'GALLERY', 'EVENTS', 'ABOUT US', 'CONTACT'].map((variant, index) => (
+            <button key={index} className={`nav-item ${variant.toLowerCase()}`}>
+              {variant}
+            </button>
+          ))}
+        </div>
+
+
+        {/* <div>
         <>
           {['HOME', 'AWARDS', 'GALLERY', 'EVENTS', 'ABOUT US', 'CONTACT'].map(
             (variant) => (
@@ -50,7 +62,7 @@ export default function HeaderTem() {
             ),
           )}
         </>
-        </div>
+        </div> */}
     </div>
 
     </div>

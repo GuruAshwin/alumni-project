@@ -7,7 +7,9 @@ body{
 .Header{
   background-color:#656DA4;
   padding-bottom: 30px;
-  height: 230px;
+  height: 200px;
+  top: 0;
+  z-index: 1000;
 }
 
 .containerStyles {
@@ -78,6 +80,30 @@ body{
   }
 
   .menuBar {
-    margin-left: 20px;
-    justify-content: center;
+    display: flex;
+    padding: 10px;
+    margin-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-item {
+    background-color: #656DA4;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-item:hover {
+    background-color: #656DA4;
+    color: black;
   }
