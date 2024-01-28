@@ -1,9 +1,19 @@
+"use client";
 import React from "react";
 import "./Header.css"
+import { useRouter } from "next/navigation";
+import { redirect } from "next/dist/server/api-utils";
 import { usePathname } from "next/navigation";
 import '@fortawesome/fontawesome-free/css/all.css';
 import Gallery from "../Gallery/gallery"
 export default function HeaderTem() {
+  
+  const router = useRouter();
+
+  const handleLoginClick = () => {
+    router.push("/routes/");
+  }
+
   return (
     <div className="Header">
       <div className="containerStyles">
@@ -21,9 +31,11 @@ export default function HeaderTem() {
           </div>
         </div>
         <div className="buttoncontainer">
-          <button className="buttonStyles">LOGIN</button>
-        </div>
+        <button className="buttonStyles" onClick={handleLoginClick} >
+          LOGIN
+        </button>
       </div>
+    </div>
       <div className="topnav" id="myTopnav">
         <a>HOME</a>
         <a>AWARDS</a>
