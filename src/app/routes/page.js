@@ -51,6 +51,10 @@ export default function LoginScreen({
                   <div className="button">
                     <button>LOGIN</button>
                   </div>
+                  <div className="subtext">
+                    <p>forgot password</p>
+                    <a>click here</a>
+                  </div>
               </div> 
           </div>
          </div>

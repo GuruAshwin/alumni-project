@@ -1,11 +1,17 @@
-
+"use client";
 import React from "react";
 import "./Header.css"
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { redirect } from "next/dist/server/api-utils";
 import { usePathname } from "next/navigation";
 
 export default function HeaderTem() {
+  
+  const router = useRouter();
+
+  const handleLoginClick = () => {
+    router.push("/routes/");
+  }
 
 
   return (
@@ -25,7 +31,7 @@ export default function HeaderTem() {
               </div>
         </div>
       <div className="buttoncontainer">
-        <button className="buttonStyles" >
+        <button className="buttonStyles" onClick={handleLoginClick} >
           LOGIN
         </button>
       </div>
@@ -33,7 +39,7 @@ export default function HeaderTem() {
     <div className="menuBar">
         <div className="nav">
           {['HOME', 'AWARDS', 'GALLERY', 'EVENTS', 'ABOUT US', 'CONTACT'].map((variant, index) => (
-            <button key={index} className={`nav-item ${variant.toLowerCase()}`}>
+            <button key={index} className={`nav-item ${variant.toLowerCase()}`} >
               {variant}
             </button>
           ))}

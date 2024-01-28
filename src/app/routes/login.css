@@ -16,6 +16,8 @@
     background-color: #2D3250;
     border-radius: 10px;
     padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .slogoImg {
@@ -61,7 +63,7 @@
     font-size: 8px;
     font-family: 'Inter', sans-serif;
     font-weight: bolder;
-    gap: 0;
+    margin: 2px;
     flex: 1;
   }
 
@@ -84,6 +86,11 @@
     text-align: center;
   }
 
+  .s-subtitle {
+    gap: 0px;
+    margin: 0px;
+  }
+
   .mainContainer {
     display: flex;
     flex-direction: column;
@@ -93,6 +100,7 @@
   
   .loginContainer {
       position: relative;
+      padding: 50px;
   }
 
   .login-form {
@@ -136,7 +144,7 @@
   }
 
   .input {
-    width: 200px;
+    width: 280px;
     height: 40px;
     border-radius: 10px;
     border-color: aliceblue;
@@ -145,11 +153,35 @@
   }
 
   .inputComponent {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
+  .button button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #2D3250;
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+  }
+
   .button {
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+  }
+
+  .subtext {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter', sans-serif;
+    color: #2D3250;
+    gap: 10px;
+  }
+
+  .subtext a:hover{
+    cursor: grab;
+    color: aliceblue;
   }
