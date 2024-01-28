@@ -2,7 +2,8 @@ import React from "react";
 import "./footerStyles.css";
 export default function CustomFooter() {
     return(
-        <div className="footerContainer">
+        <div className="footer">
+            <div className="footerContainer">
               <div className="logo">
                     <div>
                         <img src="/logo.png" alt="logo" className="logoImg"></img>
@@ -27,6 +28,8 @@ export default function CustomFooter() {
                 <p>GALLERY</p>
                 <p>ABOUT US</p>
               </div>
+            </div>
         </div>
+        
     )
 }

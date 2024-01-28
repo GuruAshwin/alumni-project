@@ -14,7 +14,7 @@ export default function Home() {
       <div className="carouselContainer">
         <ImageCarousel></ImageCarousel>
       </div>
-      <CustomFooter></CustomFooter>
+      {/* <CustomFooter></CustomFooter> */}
     </div>
   );
 }
