@@ -45,7 +45,7 @@ export default function HeaderTem() {
         <a>HOME</a>
         <a>AWARDS</a>
         <a href="C:\Projects\alumuni-project\src\app\components\Gallery\gallery.js">GALLERY</a>
-        <a>EVENTS</a>
+        <a href="/routes/events">EVENTS</a>
         <a>ABOUTS US</a>
         <a>CONTACT</a>
         <a className="icon" onClick={myFunction}>

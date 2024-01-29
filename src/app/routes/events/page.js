@@ -9,6 +9,7 @@ export default function eventsPage() {
             </div>
             <p>this is events screen</p>
             <a href="/routes/events/registration">Registration</a>
+            <a href="/routes/events/nomination">Nomination</a>
         </div>
     )
 }

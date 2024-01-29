@@ -1,16 +1,16 @@
 import React from "react";
 import HeaderTem from "@/app/components/Header/Header";
-import "./registrationStyles.css";
+import "./nomination.css"
 
-export default function RegistrationScreen() {
+export default function Nomination(){
     return(
-        <div className="RegForm">
+        <div>
             <div>
                 <HeaderTem></HeaderTem>
             </div>
             <form method="POST">
                 <div className="InputFormContainer">
-                    <h1>Registration Form</h1>
+                    <h1>Nomination Form</h1>
                     <div className="InputForm">
                         <div className="InputElem">
                             <p>Full name</p>
@@ -39,5 +39,6 @@ export default function RegistrationScreen() {
                 </div>
             </form>
         </div>
-    )
+
+    );
 }
