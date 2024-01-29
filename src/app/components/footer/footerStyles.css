@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 .flogo {
-=======
-.footer{
-  background-color:#656DA4;
-}
-.logo {
->>>>>>> 042d8b929bcb7e97d7503443f3c435593a96bc44
     display: flex;
     flex-direction: row;
     justify-content: center;

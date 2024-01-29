@@ -5,11 +5,7 @@ body{
 }
 .Header{
   background-color:#656DA4;
-<<<<<<< HEAD
-  height: auto;
-=======
   height: 24vh;
->>>>>>> 042d8b929bcb7e97d7503443f3c435593a96bc44
   top: 0;
   z-index: 1000;
   justify-content: center;
@@ -40,9 +36,8 @@ body{
   }
 
   .logoImg {
-  max-width:100%;
-  min-width: 100px;
-  height: auto;
+  width: 100px;
+  height: 100px;
   }
   
   .logo-text {
@@ -57,12 +52,12 @@ body{
   .logo-text h1{
     margin-bottom: 10px;
     border-bottom: 2px solid white;
-    font-size: 1000px;
+    font-size: 40px;
     font-weight:bolder;
     flex: 2;
   }
   .logo-text h4{
-    font-size: 200px;
+    font-size: 12px;
     font-weight: bolder;
     flex: 1;
   }

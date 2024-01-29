@@ -42,12 +42,12 @@ export default function LoginScreen({
               <form method="POST" action={"/"}>
                 <div className="inputComponent">
                     <div className="inputelement">
-                      <text className="label">USERNAME</text>
-                      <input placeholder="username" className="input"></input>
+                      <text className="label"></text>
+                      <input placeholder="username" name="username" className="input"></input>
                     </div>
                     <div className="inputelement">
                       <text className="label">PASSWORD</text>
-                      <input placeholder="password" className="input"></input>
+                      <input placeholder="password" name="password" className="input"></input>
                     </div>
                     <div className="button">
                       <button>LOGIN</button>
