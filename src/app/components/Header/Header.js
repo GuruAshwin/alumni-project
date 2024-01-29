@@ -4,7 +4,8 @@ import "./Header.css";
 import { useRouter } from "next/navigation";
 import { redirect } from "next/dist/server/api-utils";
 import { usePathname } from "next/navigation";
-
+import '@fortawesome/fontawesome-free/css/all.css';
+import Gallery from "../Gallery/gallery"
 export default function HeaderTem() {
   
   const router = useRouter();
@@ -20,65 +21,46 @@ export default function HeaderTem() {
 
   return (
     <div className="Header">
-      <div className="containerStyles" >
+      <div className="containerStyles">
         <div className="logo">
-              <div>
-                <img src="/logo.png" alt="logo" className="logoImg"></img>
-              </div>
-              <div className="logo-text">
-                <h1>SATHYABAMA</h1>
-                <div className="subtitle">
-                  <h4>INSTITUTE OF SCIENCE AND TECHNOLOGY</h4>
-                  <h4>(DEEMED TO BE UNIVERSITY)</h4>
-                  <h4>CATEGORY-1 UNIVERSITY BY UGC</h4>
-                </div>
-              </div>
+          <div>
+            <img src="/logo.png" alt="logo" className="logoImg" />
+          </div>
+          <div className="logo-text">
+            <h1>SATHYABAMA</h1>
+            <div className="subtitle">
+              <h4>INSTITUTE OF SCIENCE AND TECHNOLOGY</h4>
+              <h4>(DEEMED TO BE UNIVERSITY)</h4>
+              <h4>CATEGORY-1 UNIVERSITY BY UGC</h4>
+            </div>
+          </div>
         </div>
-      <div className="buttoncontainer">
+        <div className="buttoncontainer">
         <button className="buttonStyles" onClick={handleLoginClick} >
           LOGIN
         </button>
       </div>
     </div>
-    <div className="menuBar">
-        <div className="nav">
-          {['HOME', 'AWARDS', 'GALLERY', 'EVENTS', 'ABOUT US', 'CONTACT'].map((variant, index) => (
-            <button key={index} className={`nav-item ${variant.toLowerCase()}`} onClick={() => handleButtonClick(variant)} >
-              {variant}
-            </button>
-          ))}
-        </div>
-
-
-        {/* <div>
-        <>
-          {['HOME', 'AWARDS', 'GALLERY', 'EVENTS', 'ABOUT US', 'CONTACT'].map(
-            (variant) => (
-              <DropdownButton
-                as={ButtonGroup}
-                key={variant}
-                id={`dropdown-variants-${variant}`}
-                variant={variant.toLowerCase()}
-                title={variant}
-              >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3" active>
-                  Active Item
-                </Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-              </DropdownButton>
-            ),
-          )}
-        </>
-        </div> */}
+      <div className="topnav" id="myTopnav">
+        <a>HOME</a>
+        <a>AWARDS</a>
+        <a href="C:\Projects\alumuni-project\src\app\components\Gallery\gallery.js">GALLERY</a>
+        <a>EVENTS</a>
+        <a>ABOUTS US</a>
+        <a>CONTACT</a>
+        <a className="icon" onClick={myFunction}>
+          <i className="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
-
-    </div>
-    
   );
 
-
-
+  function myFunction() {
+    var topnav = document.getElementById("myTopnav");
+    if (topnav.className === "topnav") {
+      topnav.className += " responsive";
+    } else {
+      topnav.className = "topnav";
+    }
+  }
 }
