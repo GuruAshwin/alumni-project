@@ -1,6 +1,9 @@
 import react from "react";
+import HeaderTem from "@/app/components/Header/Header";
 export default function Gallery() {
     return (
+        <>
+        <HeaderTem></HeaderTem>
         <div>
             <div class="responsive">
                 <div class="gallery">
@@ -40,5 +43,6 @@ export default function Gallery() {
             </div>
 
         </div>
+        </>
     );
 }

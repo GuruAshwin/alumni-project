@@ -15,9 +15,8 @@ export default function Home() {
         <ImageCarousel></ImageCarousel>
       </div>
       <div className="imgContainer">
-        <img src="/event-img.png" className="image"></img> 
-      </div>
-           
+        <img src="/event-img.png" className="img-fluid"></img> 
+      </div>           
       <CustomFooter></CustomFooter>
     </div>
   );

@@ -6,7 +6,7 @@ export default function CustomFooter() {
             <div className="footerContainer">
               <div className="logo">
                     <div>
-                        <img src="/logo.png" alt="logo" className="flogoImg"></img>
+                        <img src="/logo.png" alt="logo" className="img-fluid flogoImg"></img>
                     </div>
                     <div className="flogo-text">
                         <h1>SATHYABAMA</h1>
@@ -17,17 +17,22 @@ export default function CustomFooter() {
                         </div>
                     </div>
               </div>
-              <div className="contact">
-                <p>044-2450 3150/51/52/54/55</p>
-                <p>044-2450 2344</p>
-                <p>registrar@sathyabama.ac.in</p>
+              <div>
+                
               </div>
-              <div className="features">
-                <p>EVENT</p>
-                <p>AWARDS</p>
-                <p>GALLERY</p>
-                <p>ABOUT US</p>
-              </div>
+              <di>
+                  <div className="contact">
+                    <p>044-2450 3150/51/52/54/55</p>
+                    <p>044-2450 2344</p>
+                    <p>registrar@sathyabama.ac.in</p>
+                  </div>
+                  <div className="features">
+                    <p>EVENT</p>
+                    <p>AWARDS</p>
+                    <p>GALLERY</p>
+                    <p>ABOUT US</p>
+                  </div>
+              </di>
             </div>
         </div>
         
