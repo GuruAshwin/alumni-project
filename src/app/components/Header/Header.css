@@ -6,8 +6,7 @@ body{
 }
 .Header{
   background-color:#656DA4;
-  padding-bottom: 30px;
-  height: 200px;
+  height: auto;
   top: 0;
   z-index: 1000;
 }
@@ -43,6 +42,7 @@ body{
     color: aliceblue;
     padding: 20px;
   }
+
   .logo-text h1{
     margin-bottom: 10px;
     border-bottom: 2px solid white;

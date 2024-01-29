@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import "./Header.css"
+import "./Header.css";
 import { useRouter } from "next/navigation";
 import { redirect } from "next/dist/server/api-utils";
 import { usePathname } from "next/navigation";
@@ -10,8 +10,12 @@ export default function HeaderTem() {
   const router = useRouter();
 
   const handleLoginClick = () => {
-    router.push("/routes/");
+    router.push("/routes/login");
   }
+
+  const handleButtonClick = (page) => {
+    router.push(`/routes/${page.toLowerCase()}`);
+  };
 
 
   return (
@@ -39,7 +43,7 @@ export default function HeaderTem() {
     <div className="menuBar">
         <div className="nav">
           {['HOME', 'AWARDS', 'GALLERY', 'EVENTS', 'ABOUT US', 'CONTACT'].map((variant, index) => (
-            <button key={index} className={`nav-item ${variant.toLowerCase()}`} >
+            <button key={index} className={`nav-item ${variant.toLowerCase()}`} onClick={() => handleButtonClick(variant)} >
               {variant}
             </button>
           ))}

@@ -3,13 +3,13 @@ import "./footerStyles.css";
 export default function CustomFooter() {
     return(
         <div className="footerContainer">
-              <div className="logo">
+              <div className="flogo">
                     <div>
-                        <img src="/logo.png" alt="logo" className="logoImg"></img>
+                        <img src="/logo.png" alt="logo" className="flogoImg"></img>
                     </div>
-                    <div className="logo-text">
+                    <div className="flogo-text">
                         <h1>SATHYABAMA</h1>
-                        <div className="subtitle">
+                        <div className="fsubtitle">
                             <h4>INSTITUTE OF SCIENCE AND TECHNOLOGY</h4>
                             <h4>(DEEMED TO BE UNIVERSITY)</h4>
                             <h4>CATEGORY-1 UNIVERSITY BY UGC</h4>
