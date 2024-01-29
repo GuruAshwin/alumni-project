@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     background-color: #2D3250;
-    max-width: 50%;
+    max-width: 80%;
     margin: 20px auto;
     align-items: center;
     padding: 20px;
@@ -22,19 +22,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .inputElem {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    margin-bottom: 15px;
 }
 p{
+    margin-top: 10px;
     font-weight: bold;
     justify-content: left;
 }
-input{
-    width:15em ;
+input, select{
+    width: 20em ;
+    height: 3em;
     padding: .4em;
     border-radius: 10px;
 
@@ -50,4 +53,10 @@ button{
     border: none;
     font-weight: 600;
     margin: 15px;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+    padding-left: 10px;
 }
