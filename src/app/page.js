@@ -1,6 +1,6 @@
 'use client';
 import "./page.module.css";
-import ImageCarousel from "./ImageCarousel";
+import ImageCarousel from "./components/imageCarousel/ImageCarousel";
 import React from "react";
 import HeaderTem from "./components/Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +15,7 @@ export default function Home() {
         <ImageCarousel></ImageCarousel>
       </div>
       <div className="imgContainer">
-        <img src="/event-img.png" className="img-fluid"></img> 
+        <img src="/event-img.png" className="img-fluid mx-auto broucher"></img> 
       </div>           
       <CustomFooter></CustomFooter>
     </div>
