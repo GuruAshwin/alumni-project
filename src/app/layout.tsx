@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import LandingScreen from "./components/LandingPage/LandingPage";
+import LandingScreen from "./components/LandingPage/HomeScreen";
 import Home from "./page";
 import { Carousel } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';

@@ -1,6 +1,6 @@
 'use client';
 import "./page.module.css";
-import ImageCarousel from "./components/imageCarousel/ImageCarousel";
+import HomeScreen from "./components/LandingPage/HomeScreen";
 import React from "react";
 import HeaderTem from "./components/Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,10 +12,10 @@ export default function Home() {
     <div className="MainContainer">
       <HeaderTem></HeaderTem>
       <div className="carouselContainer">
-        <ImageCarousel></ImageCarousel>
+        <HomeScreen></HomeScreen>
       </div>
-      <div className="imgContainer">
-        <img src="/event-img.png" className="img-fluid mx-auto broucher"></img> 
+      <div className="imgContainer text-center">
+        <img src="/event-img.png" className="img-fluid broucher " style={{ maxWidth: '80%' }} alt="Event Image"></img> 
       </div>           
       <CustomFooter></CustomFooter>
     </div>

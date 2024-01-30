@@ -1,40 +1,38 @@
 import React from "react";
 import "./footerStyles.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export default function CustomFooter() {
     return(
-        <div className="footer">
-            <div className="footerContainer">
-              <div className="logo">
-                    <div>
-                        <img src="/logo.png" alt="logo" className="img-fluid flogoImg"></img>
-                    </div>
-                    <div className="flogo-text">
-                        <h1>SATHYABAMA</h1>
-                        <div className="fsubtitle">
-                            <h4>INSTITUTE OF SCIENCE AND TECHNOLOGY</h4>
-                            <h4>(DEEMED TO BE UNIVERSITY)</h4>
-                            <h4>CATEGORY-1 UNIVERSITY BY UGC</h4>
-                        </div>
-                    </div>
-              </div>
-              <div>
-                
-              </div>
-              <di>
-                  <div className="contact">
-                    <p>044-2450 3150/51/52/54/55</p>
-                    <p>044-2450 2344</p>
-                    <p>registrar@sathyabama.ac.in</p>
+    <>
+        <footer class="container-fluid">
+        <div className="logo">
+                <div>
+                  <img src="/logo.png" alt="logo" className="img-fluid logoImg" />
+                </div>
+                <div className="logo-text">
+                  <h1>SATHYABAMA</h1>
+                  <div className="subtitle">
+                    <h4>INSTITUTE OF SCIENCE AND TECHNOLOGY</h4>
+                    <h4>(DEEMED TO BE UNIVERSITY)</h4>
+                    <h4>CATEGORY-1 UNIVERSITY BY UGC</h4>
                   </div>
-                  <div className="features">
-                    <p>EVENT</p>
-                    <p>AWARDS</p>
-                    <p>GALLERY</p>
-                    <p>ABOUT US</p>
-                  </div>
-              </di>
-            </div>
+                </div>
+              </div>
+        <contact class="contact">
+            <span class="bi bi-telephone-outbound-fill">&nbsp;044-2450 3150/ 51/ 52/ 54/ 55</span>
+            <span class="bi bi-telephone-outbound-fill">&nbsp;044-2450 2344</span>
+            <span class="bi bi-envelope">&nbsp;register@sathyabama.ac.in</span>
+        </contact>
+        <div class="links">
+            <span> EVENT</span>
+            <span>AWARDS</span>
+            <span>GALLERY</span>
+            <span>ABOUT US</span>
         </div>
+        </footer>
+    </>
+        
         
     )
 }
