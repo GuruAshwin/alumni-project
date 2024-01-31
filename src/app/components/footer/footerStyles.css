@@ -1,8 +1,13 @@
-.logo {
+.f_logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
+  min-height: 30vh;
+}
+
+.f_logo a{
+  text-decoration: none;
 }
 
 
@@ -11,7 +16,7 @@ width: 100px;
 height: 100px;
 }
 
-.logo-text {
+.f_logo-text {
   text-align: center;
   display: flex;
   align-items: center;
@@ -19,18 +24,19 @@ height: 100px;
   color: aliceblue;
   padding: 20px;
 }
-.logo-text h1 {
+.f_logo-text h1 {
   margin-bottom: 10px;
   border-bottom: 2px solid white;
   font-size: 2.8vw;
   font-family: 'Inter', sans-serif;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
-.logo-text h4 {
-  font-size: 10px;
+.f_logo-text h3 {
+  font-size: 0.75em;
+  margin: auto;
   font-family: 'Inter', sans-serif;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .subtitle {
@@ -44,18 +50,32 @@ height: 100px;
   font-weight: bold;
 }
 .contact{
-  text-align: center;
+  margin-top: 20px;
+  text-align: left;
 }
 .contact span{
   display:block;
   padding: 8px;
 }
-.links{
-text-align: center;
-
+.f_links{
+  margin-top: 20px;
+  text-align: left;
 }
-.links span{
+
+.f_links a{
+  text-decoration: none;
+  color: white;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.f_links a:hover{
+  color: blue;
+  opacity: 1;
+}
+
+.f_links a{
   padding-top: 5px;
   display:block;
-  padding-left: 5pxs;
+  padding-left: 5px;
 }

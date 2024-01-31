@@ -22,28 +22,28 @@ const HomeScreen = () => {
         <Carousel.Item className="CarouselItem">
           <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
-            src="/carousel-img-1.png"
+            src="/carousel-img-1.jpg"
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item className="CarouselItem">
           <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
-            src="/carousel-img-2.png"
+            src="/carousel-img-2.jpg"
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item className="CarouselItem">
           <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
-            src="/carousel-img-3.png"
+            src="/carousel-img-3.jpg"
             alt="third slide"
           />
         </Carousel.Item>
         <Carousel.Item className="CarouselItem">
           <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
-            src="/carousel-img-4.png"
+            src="/carousel-img-4.jpg"
             alt="fourth slide"
           />
         </Carousel.Item>
