@@ -1,50 +1,59 @@
-div.select_page{
-  margin-top: 40px;
+/* gallery.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-div.gallery {
-    border: 1px solid #ccc;
-    background-color: black;
+/* Style for the gallery container */
+.select_page {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Style for each gallery item container */
+.container {
+  flex-basis: calc(50% - 40px); /* Increase the size of each container to 50% */
+  margin-bottom: 40px; /* Add margin bottom to create space between containers */
+  padding: 20px; /* Add padding to each container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to each container */
+  text-align: center;
+}
+
+/* Style for the images inside gallery containers */
+.container img {
+  width: 100%; /* Ensure images fill their containers */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the links inside gallery containers */
+.convlink, .alumlink {
+  display: block;
+  margin-top: 20px; /* Add margin top for space between image and link */
+  text-decoration: none;
+  font-size: 18px; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  color: #333; /* Set link color */
+  transition: color 0.3s ease; /* Add smooth transition for color change */
+}
+
+.convlink:hover, .alumlink:hover {
+  color: #666; /* Change link color on hover */
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-basis: calc(50% - 40px); /* Set width to 50% for medium screens */
   }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-basis: calc(100% - 40px); /* Set width to 100% for small screens */
   }
-  
-  div.gallery img {
-    width: 100%;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+}
