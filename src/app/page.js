@@ -5,7 +5,8 @@ import React from "react";
 import HeaderTem from "./components/Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomFooter from "./components/footer/footer";
-import eventImage from "./components/eventImage/eventImage";
+import EventImage from "./components/eventImage/eventImage";
+import CollegeSlider from "./components/college_slider/collgeslider";
 
 export default function Home() {
   return (
@@ -14,9 +15,12 @@ export default function Home() {
       <div className="carouselContainer">
         <HomeScreen></HomeScreen>
       </div>
-      <div className="imgContainer text-center">
-        <img src="/event-img.png" className="img-fluid broucher " style={{ maxWidth: '80%' }} alt="Event Image"></img> 
-      </div>           
+      <div>
+        <EventImage></EventImage>
+      </div>
+      <div>
+        <CollegeSlider></CollegeSlider>
+      </div>
       <CustomFooter></CustomFooter>
     </div>
   );
