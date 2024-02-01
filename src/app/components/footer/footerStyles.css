@@ -50,12 +50,21 @@ height: 100px;
   display:block;
   padding: 8px;
 }
-.links{
+.Footnav{
 text-align: center;
 
 }
-.links span{
+.Footnav span{
   padding-top: 5px;
   display:block;
   padding-left: 5pxs;
+}
+@media screen and (max-width: 600px) {
+  .logo-text h1 {
+    font-size: 5vw; 
+  }
+
+  .logo-text h4 {
+    font-size: 8px;
+  }
 }

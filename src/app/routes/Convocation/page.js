@@ -1,9 +1,10 @@
+"use client"
 import React, { useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './HomeScreen.css';
 
-const HomeScreen = () => {
+
+const ConvoScreen = () => {
   useEffect(() => {
     // Load Bootstrap JavaScript only on the client side
     import('bootstrap/dist/js/bootstrap.min.js').then((bootstrap) => {
@@ -52,4 +53,5 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default ConvoScreen;
+

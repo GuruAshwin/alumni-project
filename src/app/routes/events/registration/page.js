@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React, { useState } from "react";
 import HeaderTem from "@/app/components/Header/Header";
 import "./registrationStyles.css";

@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function CustomFooter() {
     return(
     <>
-        <footer class="container-fluid">
+        <footer className="container-fluid">
         <div className="logo">
                 <div>
                   <img src="/logo.png" alt="logo" className="img-fluid logoImg" />
@@ -18,13 +18,13 @@ export default function CustomFooter() {
                     <h4>CATEGORY-1 UNIVERSITY BY UGC</h4>
                   </div>
                 </div>
-              </div>
-        <contact class="contact">
-            <span class="bi bi-telephone-outbound-fill">&nbsp;044-2450 3150/ 51/ 52/ 54/ 55</span>
-            <span class="bi bi-telephone-outbound-fill">&nbsp;044-2450 2344</span>
-            <span class="bi bi-envelope">&nbsp;register@sathyabama.ac.in</span>
+          </div>
+        <contact className="contact">
+            <span className="bi bi-telephone-outbound-fill">&nbsp;044-2450 3150/ 51/ 52/ 54/ 55</span>
+            <span className="bi bi-telephone-outbound-fill">&nbsp;044-2450 2344</span>
+            <span className="bi bi-envelope">&nbsp;register@sathyabama.ac.in</span>
         </contact>
-        <div class="links">
+        <div className="Footnav">
             <span> EVENT</span>
             <span>AWARDS</span>
             <span>GALLERY</span>
