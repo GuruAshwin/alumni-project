@@ -34,16 +34,18 @@ export default function HeaderTem() {
             <div className="containerStyles">
               <div className="logo">
                 <div>
-                  <img src="/logo.png" alt="logo" className="img-fluid logoImg" />
+                  <a href="/"><img src="/logonew1.png" alt="logo" className="img-fluid logoImg" /></a>
                 </div>
+                <a href="/">
                 <div className="logo-text">
                   <h1>SATHYABAMA</h1>
                   <div className="subtitle">
-                    <h4>INSTITUTE OF SCIENCE AND TECHNOLOGY</h4>
-                    <h4>(DEEMED TO BE UNIVERSITY)</h4>
-                    <h4>CATEGORY-1 UNIVERSITY BY UGC</h4>
+                    <h3>INSTITUTE OF SCIENCE AND TECHNOLOGY</h3>
+                    <h3>(DEEMED TO BE UNIVERSITY)</h3>
+                    <h3>CATEGORY-1 UNIVERSITY BY UGC</h3>
                   </div>
                 </div>
+                </a>
               </div>
               <div className="buttoncontainer">
               <button className="buttonStyles" onClick={handleLoginClick} >
@@ -53,7 +55,6 @@ export default function HeaderTem() {
           </div>
           <div className="topnav" id="myTopnav">
               <a href="/">HOME</a>
-              <a href="#awards">AWARDS</a>
               <a href="/routes/Gallery">GALLERY</a>
               <a href="/routes/events">EVENTS</a>
               <a href="/routes/AboutUs">ABOUT US</a>
