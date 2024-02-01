@@ -27,9 +27,8 @@ body{
     padding: 0px 2em 0px 2em;
     display: flex;
     flex-direction: row;
-   justify-content: space-between;
     align-items: center;
-    height:74%;
+    height:25vh;
       /* min-height: fit-content; */
     font-family: 'Courier New', Courier, monospace;
   }
@@ -41,6 +40,9 @@ body{
     width: 100%;
   }
 
+  .logo a{
+    text-decoration: none;
+  }
 
   .logoImg {
   width: 100px;
@@ -63,8 +65,9 @@ body{
     font-weight: bolder;
   }
   
-  .logo-text h4 {
-    font-size: 10px;
+  .logo-text h3 {
+    font-size: 0.75em;
+    margin: auto;
     font-family: 'Inter', sans-serif;
     font-weight: bolder;
   }
@@ -75,13 +78,15 @@ body{
 
 
   .buttonStyles {
-    background-color: #3490dc;
+    background-color: #ffffff;
     padding: .5em 1em;
     border-radius: 100px;
     width: 100%;
     cursor: pointer;
     margin-right: 2rem;
     font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #2D3250;
   }
 
   .profileBtn {
@@ -94,6 +99,8 @@ body{
 .topnav {
   overflow: hidden;
   z-index:1001 ;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   background-color:#656DA4;
 }
 

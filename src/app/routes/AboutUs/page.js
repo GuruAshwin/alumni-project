@@ -1,7 +1,8 @@
 import React from "react";
-import "./aboutus.css"
+import "./aboutus.css";
 import HeaderTem from "@/app/components/Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CustomFooter from "@/app/components/footer/footer";
 
 export default function AboutUs(){
     return(
@@ -39,7 +40,7 @@ export default function AboutUs(){
                         and academic excellence.</p>
                 </div>
             </div>
-            
+            <CustomFooter></CustomFooter>
         </>
 
     );
