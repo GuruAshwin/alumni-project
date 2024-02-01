@@ -17,6 +17,7 @@ const CollegeSlider = () => {
 
   return (
     <div className='college_slide'>
+        <h1>College</h1>
       <Carousel interval={2000} className="CarouselContainer">
         <Carousel.Item className="CarouselItem">
           <img
