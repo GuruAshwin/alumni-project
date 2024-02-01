@@ -1,0 +1,27 @@
+.college_slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.slides {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    /* height: 500px; */
+}
+
+.CarouselContainer1 {
+    width: 80%;
+    height: 100%;
+  }
+
+.CarouselItem1 img {
+    width: 100%;
+    height: 100%;
+}

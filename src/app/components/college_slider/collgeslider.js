@@ -17,30 +17,33 @@ const CollegeSlider = () => {
 
   return (
     <div className='college_slide'>
+      <div className="carouselTitleContainer">
         <h1>College</h1>
-      <Carousel interval={2000} className="CarouselContainer">
-        <Carousel.Item className="CarouselItem">
+      </div>
+      <div className='slides'>
+      <Carousel interval={2000} className="CarouselContainer1">
+        <Carousel.Item className="CarouselItem1">
           <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
             src="/collegeslider1.jpeg"
             alt="First slide"
           />
         </Carousel.Item>
-        <Carousel.Item className="CarouselItem">
+        <Carousel.Item className="CarouselItem1">
           <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
             src="/collegeslider2.jpg"
             alt="Second slide"
           />
         </Carousel.Item>
-        <Carousel.Item className="CarouselItem">
+        <Carousel.Item className="CarouselItem1">
           <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
             src="/collegeslider3.jpg"
             alt="third slide"
           />
         </Carousel.Item>
-        <Carousel.Item className="CarouselItem">
+        <Carousel.Item className="CarouselItem1">
           <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
             src="/collegeslider4.jpg"
@@ -49,6 +52,7 @@ const CollegeSlider = () => {
         </Carousel.Item>
         {/* Add more Carousel.Items for additional images */}
       </Carousel>
+      </div>
     </div>
   );
 };
