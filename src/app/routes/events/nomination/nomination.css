@@ -1,37 +1,55 @@
-.RegForm{
-    /* align-items: center; */
-    justify-content: center;
-}
-.InputFormContainer {
+
+.nomination_box {
     color:white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     background-color: #2D3250;
-    max-width: 50%;
+    max-width: 80%;
     margin: 20px auto;
     align-items: center;
-    padding: 20px;
+    padding-right: 20px;
     border-radius: 40px;
 
 }
 
-.InputForm{
+.nomin_form{
+    padding: 10px;
+}
+
+.nomin_img{
+    width: 50vw;
+    border-radius: 40px;
+    height: 80vh;
+}
+
+.primary_nominbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondary_nomin{
+    margin: 20px;
+}
+
+.radio{
+    width: 3em;
+}
+
+/* .InputForm{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+    align-items: left;
+} */
 
-.inputElem {
+/* .inputElem {
     display: flex;
-    flex-direction: column;
-    justify-content: left;
-}
+} */
 p{
     font-weight: bold;
-    justify-content: left;
+    /* justify-content: left; */
 }
 input{
     width:15em ;
@@ -39,11 +57,12 @@ input{
     border-radius: 10px;
 
 }
-/* .buttonCon{
-    justify-content: center;
-} */
+
+.butt{
+   text-align: center;
+}
+
 button{
-    /* background-color: ; */
     border-radius: 15px;
     padding: 8px;
     width: 90px;

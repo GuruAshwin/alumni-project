@@ -9,7 +9,9 @@ import "./Header.css";
 import { useRouter } from "next/navigation";
 import { redirect } from "next/dist/server/api-utils";
 import { usePathname } from "next/navigation";
+// import DropdownMenu from "@/app/components/dropdownmenu/dropdownmenu";
 import '@fortawesome/fontawesome-free/css/all.css';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 export default function HeaderTem() {
   
@@ -56,9 +58,19 @@ export default function HeaderTem() {
           <div className="topnav" id="myTopnav">
               <a href="/">HOME</a>
               <a href="/routes/Gallery">GALLERY</a>
-              <a href="/routes/events">EVENTS</a>
+              <Dropdown>
+                <Dropdown.Toggle className="drop_name" variant="primary" id="dropdown-basic">
+                  EVENTS
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="/./routes/events/registration">Registration Form</Dropdown.Item>
+                  <Dropdown.Item href="/./routes/events/nomination">Nomination Form</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Feedback Form</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
               <a href="/routes/AboutUs">ABOUT US</a>
-              <a href="#contact">CONTACT</a>
+              <a href="/routes/Contact">CONTACT</a>
               <a className="icon" onClick={myFunction}>
                 <i className="fa fa-bars"></i>
               </a>
