@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Slider from "react-slider";
+
 import "./convo2017.css";
 
 
