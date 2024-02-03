@@ -25,7 +25,7 @@ const CollegeSlider = () => {
         <Carousel.Item className="CarouselItem1">
           <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
-            src="/collegeslider1.jpeg"
+            src="/collegeslider1.jpg"
             alt="First slide"
           />
         </Carousel.Item>

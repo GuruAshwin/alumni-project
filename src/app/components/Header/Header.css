@@ -14,12 +14,11 @@ body{
   background-color:#656DA4;
   height: auto;
   top: 0;
-  /* z-index: 1000; */
+  z-index: 1000;
   margin: 0 auto;
   align-items: center;
   padding-top: 0em;
   min-width: 100%;
-  
 }
 
 .containerStyles {
@@ -93,45 +92,25 @@ body{
     margin-right: 10px;
   }
   
-  /* .buttonContainer {
-    padding: 0px 50px;
-  } */
-/* .topnav {
-  overflow: hidden;
-  z-index:1001 ;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  background-color:#656DA4;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 12px 30px 10px 30px;
-  text-decoration: none;
-  font-size: 17px;
-  cursor: pointer;
-}
-
-.topnav a:hover {
- text-decoration: 2px underline  white;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-} */
 
 .topnav {
-  overflow: hidden;
+  justify-content: space-evenly;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  height: auto;
   background-color:#656DA4;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
+@media screen and (min-width: 768px) {
+  .topnav {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
 
 .topnav a {
   float: left;
@@ -140,6 +119,7 @@ body{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* Style for the active link */
@@ -211,3 +191,14 @@ body{
     text-align: left;
   }
 }
+
+.drop_name{
+  background-color:#656DA4;
+  border: none;
+}
+
+.dropdown-menu{
+  background-color: #2D3250;
+  height: auto;
+}
+

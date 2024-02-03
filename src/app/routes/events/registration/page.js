@@ -1,6 +1,7 @@
-// "use client";
+"use client";
 import React, { useState } from "react";
 import HeaderTem from "@/app/components/Header/Header";
+import CustomFooter from "@/app/components/footer/footer";
 import "./registrationStyles.css";
 
 export default function RegistrationScreen() {
@@ -91,8 +92,13 @@ export default function RegistrationScreen() {
             <div>
                 <HeaderTem />
             </div>
+            <div>
             <form method="POST" onSubmit={handleSubmit}>
                 <div className="InputFormContainer">
+                    <div>
+                    <img src="/Aboutus.jpg" className="reg_img" alt="img"/>
+                    </div>
+                    <div className="form">
                     <h1>Registration Form</h1>
                     <div className="InputForm">
                         <div className="InputElem">
@@ -177,8 +183,13 @@ export default function RegistrationScreen() {
                             <button type="submit">SUBMIT</button>
                         </div>
                     </div>
+                    </div>
                 </div>
             </form>
+            </div>
+            <div>
+                <CustomFooter></CustomFooter>
+            </div>
         </div>
     );
 }

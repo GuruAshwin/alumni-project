@@ -14,14 +14,14 @@ return(
       <div className="mainContainer">
          <div className="logo"> 
                <div>
-                 <img src="/logo.png" alt="logo" className="logoImg"></img>
+                 <img src="/logonew1.png" alt="logo" className="logoImg"></img>
                </div>
                <div className="logo-text">
                  <h1>SATHYABAMA</h1>
                  <div className="subtitle">
-                   <h4>INSTITUTE OF SCIENCE AND TECHNOLOGY</h4>
-                   <h4>(DEEMED TO BE UNIVERSITY)</h4>
-                   <h4>CATEGORY-1 UNIVERSITY BY UGC</h4> 
+                   <h3>INSTITUTE OF SCIENCE AND TECHNOLOGY</h3>
+                   <h3>(DEEMED TO BE UNIVERSITY)</h3>
+                   <h3>CATEGORY-1 UNIVERSITY BY UGC</h3> 
                  </div>
                </div>
          </div>
@@ -31,25 +31,27 @@ return(
           </div>
           <div className="login-form">
               <div className="slogo">
-                <div>
-                  <img src="/logo.png" alt="logo" className="slogoImg"></img>
-                </div>
-                <div className="s-logo-text">
-                  <h1>SATHYABAMA</h1>
-                  <div className="s-subtitle">
-                    <h4>INSTITUTE OF SCIENCE AND TECHNOLOGY</h4>
-                    <h4>(DEEMED TO BE UNIVERSITY)</h4>
-                    <h4>CATEGORY-1 UNIVERSITY BY UGC</h4> 
+                <div className="sathyabama_logo">
+                  <div>
+                    <img src="/logonew1.png" alt="logo" className="slogoImg"></img>
+                  </div>
+                  <div className="s-logo-text">
+                    <h1>SATHYABAMA</h1>
+                    <div className="s-subtitle">
+                      <h3>INSTITUTE OF SCIENCE AND TECHNOLOGY</h3>
+                      <h3>(DEEMED TO BE UNIVERSITY)</h3>
+                      <h3>CATEGORY-1 UNIVERSITY BY UGC</h3> 
+                    </div>
                   </div>
                 </div>
-              </div>
-              <form method="post" action={"http://127.0.0.1:8000/alumniapi/login-user/"}>
+                <form>
                 <div className="inputComponent">
                     <div className="inputelement">
-                      <text className="label"></text>
+                      <text className="label">REGSITER NUMBER</text>
                       <input 
-                      placeholder="Enter register no" 
-                      // onChange={handleusername}
+                      placeholder="Enter Register Number" 
+                      onChange={handleInputChange}
+                      value={formData.reg_no}
                       name="reg_no" 
                       className="input"
                       required
@@ -58,7 +60,7 @@ return(
                     <div className="inputelement">
                       <text className="label">PASSWORD</text>
                       <input 
-                      placeholder="password" 
+                      placeholder="Password" 
                       name="password" 
                       className="input"
                       // onChange={handlepassword}
@@ -69,12 +71,15 @@ return(
                       <button  >LOGIN</button>
                     </div>
                     <div className="subtext">
-                      <p>forgot password</p>
-                      <a>click here</a>
+                      <p>Forgot Password! </p>
+                      <a href="#">Click here</a>
+                    </div>
+                    <div className="regi">
+                      <a href="#">Create New Account</a>
                     </div>
                 </div> 
               </form>
-              
+              </div>
           </div>
          </div>
      </div>
