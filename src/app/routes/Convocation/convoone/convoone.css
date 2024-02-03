@@ -1,0 +1,17 @@
+.Main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Distribute space between items */
+  }
+  
+  .image-container {
+    width: 23%; /* Each image takes up 23% of the container width */
+    margin-bottom: 20px;
+    
+  }
+  
+  .image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto;
+  }
+  
