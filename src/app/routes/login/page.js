@@ -7,6 +7,10 @@ import HomeScreen from "@/app/components/LandingPage/HomeScreen";
 
 
 export default function LoginScreen(){
+
+const handleFormData= async()=>{
+  
+}
   
 return(
     <section>
@@ -44,13 +48,13 @@ return(
                     </div>
                   </div>
                 </div>
-                <form>
+                <form action={'http://127.0.0.1:8000/alumniapi/login-user'} method="POST">
                 <div className="inputComponent">
                     <div className="inputelement">
                       <text className="label">REGSITER NUMBER</text>
                       <input 
                       placeholder="Enter register no" 
-                      // onChange={handleusername}
+                      
                       name="username" 
                       className="input"
                       required
@@ -62,12 +66,11 @@ return(
                       placeholder="Password" 
                       name="password" 
                       className="input"
-                      // onChange={handlepassword}
                       required
                       ></input>
                     </div>
                     <div className="button">
-                      <button  >LOGIN</button>
+                      <button>LOGIN</button>
                     </div>
                     <div className="subtext">
                       <p>Forgot Password! </p>

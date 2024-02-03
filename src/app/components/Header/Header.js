@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Home from "@/app/page";
 import Gallery from "../../routes/Gallery/page"
 import AboutUs from "../../routes/AboutUs/page"
@@ -14,7 +14,8 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 
 export default function HeaderTem() {
-  
+  const [user, setUser] = useState(null);
+ 
   const router = useRouter();
 
   const handleLoginClick = () => {
@@ -50,9 +51,9 @@ export default function HeaderTem() {
                 </a>
               </div>
               <div className="buttoncontainer">
-              <button className="buttonStyles" onClick={handleLoginClick} >
+              {!user && <button className="buttonStyles" onClick={handleLoginClick} >
                 LOGIN
-              </button>
+              </button>}
             </div>
           </div>
           <div className="topnav" id="myTopnav">
