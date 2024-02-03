@@ -1,27 +1,34 @@
-.RegForm{
-    /* align-items: center; */
-    justify-content: center;
-}
 .InputFormContainer {
     color:white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
     background-color: #2D3250;
     max-width: 80%;
     margin: 20px auto;
-    align-items: center;
-    padding: 20px;
+    padding-right: 30px;
     border-radius: 40px;
-
 }
+
+h1{
+    padding-top: 20px;
+}
+
+
+.reg_img{
+    width: 50vw;
+    height: 130vh;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+
 
 .InputForm{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     gap: 20px;
 }
 
@@ -42,9 +49,9 @@ input, select{
     border-radius: 10px;
 
 }
-/* .buttonCon{
-    justify-content: center;
-} */
+.buttonCon{
+    text-align: center;
+}
 button{
     /* background-color: ; */
     border-radius: 15px;

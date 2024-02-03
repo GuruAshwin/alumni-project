@@ -5,12 +5,17 @@
     align-items: center;
     background-color: #2D3250;
     width: 100%;
-    height: 200px;
+    height: 150px;
+  }
+
+  .sathyabama_logo{
+    display: flex;
+    flex-direction: row;
   }
 
   .slogo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #2D3250;
@@ -27,8 +32,8 @@
   }
 
   .logoImg {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     padding: 20px;
   }
   
@@ -86,11 +91,31 @@
     text-align: center;
   }
 
+  .subtitle h3{
+    font-size: 1.1em;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+  }
+
   .s-subtitle {
     gap: 0px;
     margin: 0px;
   }
 
+  .s-logo-text h1{
+    font-size: 2.8vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+  }
+  .s-subtitle h3{
+    font-size: 0.75em;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+  }
+
+  
   .mainContainer {
     display: flex;
     flex-direction: column;
@@ -141,6 +166,7 @@
   .inputelement {
     display: flex;
     flex-direction: column;
+    font-weight: bold;
   }
 
   .input {
@@ -157,13 +183,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
   }
 
   .button button{
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: #2D3250;
-    color: aliceblue;
+    background-color: white;
+    color: #2D3250;
+    font-weight: bold;
     font-family: 'Inter', sans-serif;
     margin-top: 20px;
   }
@@ -177,11 +205,26 @@
     display: flex;
     flex-direction: row;
     font-family: 'Inter', sans-serif;
-    color: #2D3250;
+    color: white;
     gap: 10px;
   }
 
+  .subtext a{
+    color: white;
+    text-decoration: none;
+  }
+
   .subtext a:hover{
-    cursor: grab;
-    color: aliceblue;
+    cursor: pointer;
+    color: blue;
+  }
+
+  .regi a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .regi a:hover{
+    cursor: pointer;
+    color: blue;
   }

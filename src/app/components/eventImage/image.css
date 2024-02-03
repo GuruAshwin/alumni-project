@@ -1,11 +1,17 @@
-.imageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+.event_img{
+    width: 48vw;
+    height: 300px;
 }
 
-.event_img{
-    width: 40%;
-    margin-left: 125px;
+.poster_img{
+    width: 39vw;
+    height: 300px;
+}
+
+.secondrow{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
 }
