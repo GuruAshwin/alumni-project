@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "./events.css";
 import 'bootstrap/dist/css/bootstrap.min.css';

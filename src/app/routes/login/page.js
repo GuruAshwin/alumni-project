@@ -50,7 +50,7 @@ return(
                       <input 
                       placeholder="Enter register no" 
                       // onChange={handleusername}
-                      name="reg_no" 
+                      name="username" 
                       className="input"
                       required
                       ></input>
