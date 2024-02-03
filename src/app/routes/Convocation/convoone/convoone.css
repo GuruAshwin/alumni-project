@@ -1,17 +1,87 @@
+/* convoone.css */
+
 .Main-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; /* Distribute space between items */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px; /* Add some margin for breathing space */
+}
+
+.image-container {
+  width: 30%;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Add rounded corners for a softer look */
+  overflow: hidden; /* Ensure images stay within the container boundaries */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+
+  &:hover {
+    transform: scale(1.05); /* Enlarge the image container on hover */
   }
-  
-  .image-container {
-    width: 23%; /* Each image takes up 23% of the container width */
-    margin-bottom: 20px;
-    
-  }
-  
-  .image-container img {
-    width: 100%; /* Make the image fill the container */
-    height: auto;
-  }
-  
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; /* Apply rounded corners to images */
+}
+
+/* convoone.css */
+
+/* ... (your existing styles) */
+
+.slideshow-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.slideshow-content {
+  position: relative;
+  max-width: 80%;
+  text-align: center;  /* Limit the width of the slideshow content */
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 15px;
+}
+
+.next-btn {
+  right: 15px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.slideshow-content img {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of the modal */
+  max-height: 80vh; /* Limit the height to 80% of the viewport height */
+  border-radius: 8px; /* Apply rounded corners to the image */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+}
+
+/* ... (your existing styles) */
