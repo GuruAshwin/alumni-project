@@ -28,6 +28,7 @@ export default function ImageTem({ images }) {
 
   return (
     <div className="container">
+      <h1>Convocation</h1>
       <div className="Main-container">
         {images.map((image, index) => (
           <div key={index} className="image-container" onClick={() => openSlideshow(index)}>
