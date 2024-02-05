@@ -25,12 +25,12 @@ export default function CustomFooter() {
           </div>
           </a>
         </div>
-        <contact class="contact">
-            <span class="bi bi-telephone-outbound-fill">&nbsp;044-2450 3150/ 51/ 52/ 54/ 55</span>
-            <span class="bi bi-telephone-outbound-fill">&nbsp;044-2450 2344</span>
-            <span class="bi bi-envelope">&nbsp;register@sathyabama.ac.in</span>
+        <contact className="contact">
+            <span className="bi bi-telephone-outbound-fill">&nbsp;044-2450 3150/ 51/ 52/ 54/ 55</span>
+            <span className="bi bi-telephone-outbound-fill">&nbsp;044-2450 2344</span>
+            <span className="bi bi-envelope">&nbsp;register@sathyabama.ac.in</span>
         </contact>
-        <div class="f_links">
+        <div className="f_links">
             <a href="/routes/events">EVENTS</a>
             <a href="/routes/Gallery">GALLERY</a>
             <a href="/routes/AboutUs">ABOUT US</a>

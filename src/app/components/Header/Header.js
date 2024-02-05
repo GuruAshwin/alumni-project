@@ -12,6 +12,9 @@ import { usePathname } from "next/navigation";
 // import DropdownMenu from "@/app/components/dropdownmenu/dropdownmenu";
 import '@fortawesome/fontawesome-free/css/all.css';
 import Dropdown from 'react-bootstrap/Dropdown';
+import 'bootstrap/dist/css/bootstrap.min.css';  
+import {Nav, Navbar, Container, NavDropdown} from 'react-bootstrap'; 
+
 
 export default function HeaderTem() {
   const [user, setUser] = useState(null);
@@ -25,6 +28,7 @@ export default function HeaderTem() {
   const handleButtonClick = (page) => {
     router.push(`/routes/${page.toLowerCase()}`);
   };
+
 
 
   return (
@@ -58,20 +62,10 @@ export default function HeaderTem() {
           </div>
           <div className="topnav" id="myTopnav">
               <a href="/">HOME</a>
+              <a href="#awards">ALUMNI</a>
               <a href="/routes/Gallery">GALLERY</a>
-              <Dropdown>
-                <Dropdown.Toggle className="drop_name" variant="primary" id="dropdown-basic">
-                  EVENTS
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  <Dropdown.Item href="/./routes/events/registration">Registration Form</Dropdown.Item>
-                  <Dropdown.Item href="/./routes/events/nomination">Nomination Form</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Feedback Form</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
               <a href="/routes/AboutUs">ABOUT US</a>
-              <a href="/routes/Contact">CONTACT</a>
+              <a href="#contact">CONTACT</a>
               <a className="icon" onClick={myFunction}>
                 <i className="fa fa-bars"></i>
               </a>
