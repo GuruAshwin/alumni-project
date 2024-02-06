@@ -18,10 +18,10 @@ export default function ConvocationOne() {
   ];
 
   const slides = [
-    { image: '/collegeslider1.jpg', description: 'Description for Slide 1' },
-    { image: '/collegeslider2.jpg', description: 'Description for Slide 2' },
-    { image: '/collegeslider3.jpg', description: 'Description for Slide 3' },
-    { image: '/collegeslider4.jpg', description: 'Description for Slide 4' },
+    { image: '/convocation/2017/dr2017-01.jpg', description: 'Description for Slide 1' },
+    { image: '/convocation/2017/dr2017-02.jpg', description: 'Description for Slide 2' },
+    { image: '/convocation/2017/dr2017-03.jpg', description: 'Description for Slide 3' },
+    { image: '/convocation/2017/dr2017-04.jpg', description: 'Description for Slide 4' },
     // Add more slides as needed
   ];
 
