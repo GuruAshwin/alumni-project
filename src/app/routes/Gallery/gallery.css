@@ -1,59 +1,24 @@
-/* gallery.css */
-
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Style for the gallery container */
-.select_page {
-  display: flex;
-  flex-direction: row;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-/* Style for each gallery item container */
-.container {
-  flex-basis: calc(50% - 40px); /* Increase the size of each container to 50% */
-  margin-bottom: 40px; /* Add margin bottom to create space between containers */
-  padding: 20px; /* Add padding to each container */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to each container */
+.select_page{
   text-align: center;
+  margin: 25px;
 }
-
-/* Style for the images inside gallery containers */
-.container img {
-  width: 100%; /* Ensure images fill their containers */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Style for the links inside gallery containers */
-.convlink, .alumlink {
-  display: block;
-  margin-top: 20px; /* Add margin top for space between image and link */
+.convlink,
+.alumlink {
+  font-size: 18px;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 18px; /* Set font size */
-  font-weight: bold; /* Set font weight */
-  color: #333; /* Set link color */
-  transition: color 0.3s ease; /* Add smooth transition for color change */
+  color: #333; /* You can set the color according to your design */
 }
 
-.convlink:hover, .alumlink:hover {
-  color: #666; /* Change link color on hover */
+/* Padding for images */
+.convo-img {
+  padding: 10px; /* Adjust the padding according to your preference */
 }
+.each-container{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-/* Add media query for responsiveness */
-@media screen and (max-width: 768px) {
-  .container {
-    flex-basis: calc(50% - 40px); /* Set width to 50% for medium screens */
-  }
 }
+.each-container:hover{
+  transform: scale(1.1);
 
-@media screen and (max-width: 480px) {
-  .container {
-    flex-basis: calc(100% - 40px); /* Set width to 100% for small screens */
-  }
 }

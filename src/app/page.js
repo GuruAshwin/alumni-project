@@ -7,11 +7,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomFooter from "./components/footer/footer";
 import EventImage from "./components/eventImage/eventImage";
 import CollegeSlider from "./components/college_slider/collgeslider";
-
+import VideoPlayer from "./components/homevid/homevid"
 export default function Home() {
   return (
     <div className="MainContainer">
       <HeaderTem></HeaderTem>
+      <div>
+        <VideoPlayer></VideoPlayer>
+      </div>
       <div className="carouselContainer">
         <HomeScreen></HomeScreen>
       </div>

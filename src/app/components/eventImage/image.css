@@ -1,17 +1,34 @@
-.event_img{
-    width: 48vw;
-    height: 300px;
+.imageGrid {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
-.poster_img{
-    width: 39vw;
-    height: 300px;
+.imageContainer {
+  flex: 1; /* Each container takes equal space */
+  margin-right: 20px; /* Add space between images */
+  margin-bottom: 20px; /* Add space between rows */
+  max-width: calc(50% - 20px); /* Each container takes half the width, considering margins */
 }
 
-.secondrow{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 90%;
-    margin: auto;
+.imageContainer img {
+  width: 100%; /* Ensure images take the full width of their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Query for small screens */
+@media only screen and (max-width: 767px) {
+  .imageGrid {
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .imageContainer {
+    max-width: calc(100% - 20px); /* Full width for smaller screens, considering margins */
+    margin-right: 0; /* Remove right margin for full width */
+  }
+
+  .imageGrid {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
 }

@@ -18,10 +18,10 @@ export default function ConvocationOne() {
   ];
 
   const slides = [
-    { image: '/convocation/2017/dr2017-01.jpg', description: 'Description for Slide 1' },
-    { image: '/convocation/2017/dr2017-02.jpg', description: 'Description for Slide 2' },
-    { image: '/convocation/2017/dr2017-03.jpg', description: 'Description for Slide 3' },
-    { image: '/convocation/2017/dr2017-04.jpg', description: 'Description for Slide 4' },
+    { image: '/convocation/2017/dr2017-01.jpg', description: " Dr. S. Christopher\nChairman, Defence Research and Development Organization (DRDO) & Secretary, Department of Defence (R&D) " },
+    { image: '/convocation/2017/dr2017-02.jpg', description: 'Dr. V. Narayanan\nAssociate Director, Liquid Propulsion Systems Centre (LPSC), Indian Space Research Organization (ISRO)' },
+    { image: '/convocation/2017/dr2017-03.jpg', description: 'Dr. V. R. Lalithambika\nOutstanding Scientist & Deputy Director, Vikram Sarabhai Space Center (VSSC), Indian Space Research Organization (ISRO)' },
+    { image: '/convocation/2017/dr2017-04.jpg', description: 'Dr. J. Ajeeth Prasath Jain\nSenior Principal, Bhavan Rajaji Vidhyashram, Chennai.' },
     // Add more slides as needed
   ];
 

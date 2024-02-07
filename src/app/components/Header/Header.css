@@ -27,7 +27,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height:25vh;
+    height:22vh;
       /* min-height: fit-content; */
     font-family: 'Courier New', Courier, monospace;
   }
@@ -177,6 +177,4 @@ body{
   text-align: left;
 }
 }
-
-
 
