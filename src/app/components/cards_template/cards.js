@@ -19,7 +19,6 @@ const CardSliderTemplate = ({ slides }) => {
   return (
     <div className='card-slider-container'>
       <div className='carouselTitleContainer'>
-        <h1>College</h1>
       </div>
       <div className='slides'>
         <Carousel interval={2000} className='carousel-container'>

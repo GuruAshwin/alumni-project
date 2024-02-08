@@ -1,7 +1,8 @@
-.select_page{
+.select_page {
   text-align: center;
-  margin: 25px;
+  margin: 25px 0px 25px 0px;
 }
+
 .convlink,
 .alumlink {
   font-size: 18px;
@@ -14,11 +15,19 @@
 .convo-img {
   padding: 10px; /* Adjust the padding according to your preference */
 }
-.each-container{
+
+.each-container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
 }
-.each-container:hover{
-  transform: scale(1.1);
 
+/* .each-container:first-child {
+  margin-right: 10px; /* Add margin to the right of the first container 
+}
+
+.each-container:last-child {
+  margin-left: 10px; /* Add margin to the left of the second container 
+} */
+
+.each-container:hover {
+  transform: scale(1.1);
 }

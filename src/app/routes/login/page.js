@@ -4,10 +4,20 @@ import React from "react";
 import "./login.css";
 import { useRouter } from "next/navigation";
 import HomeScreen from "@/app/components/LandingPage/HomeScreen";
-
+import axios from "axios"
 
 export default function LoginScreen(){
-
+  function submitForm() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    axios.post('http://127.0.0.1:3000/harikiran', { username, password })
+        .then(response => {
+            alert(`Response from backend: ${JSON.stringify(response.data)}`);
+        })
+        .catch(error => {
+            alert("Invalid Credientials");
+        });
+}
 const handleFormData= async()=>{
   
 }
@@ -48,14 +58,14 @@ return(
                     </div>
                   </div>
                 </div>
-                <form action={'http://127.0.0.1:8000/alumniapi/login-user'} method="POST">
+                <form>
                 <div className="inputComponent">
                     <div className="inputelement">
                       <text className="label">REGSITER NUMBER</text>
                       <input 
                       placeholder="Enter register no" 
                       
-                      name="username" 
+                      id="username" 
                       className="input"
                       required
                       ></input>
@@ -64,13 +74,13 @@ return(
                       <text className="label">PASSWORD</text>
                       <input 
                       placeholder="Password" 
-                      name="password" 
+                      id="password" 
                       className="input"
                       required
                       ></input>
                     </div>
                     <div className="button">
-                      <button>LOGIN</button>
+                      <button type="button" onClick={submitForm}>LOGIN</button>
                     </div>
                     <div className="subtext">
                       <p>Forgot Password! </p>

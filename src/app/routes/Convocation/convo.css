@@ -1,5 +1,5 @@
 .img-container {
-  flex-basis: calc(33.3333% - 10px);
+  flex-basis: calc(33.3333% - 20px);
   margin-bottom: 20px;
   padding: 10px; /* Adjusted padding for better spacing on smaller screens */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

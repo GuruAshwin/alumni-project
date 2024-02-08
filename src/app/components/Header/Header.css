@@ -1,7 +1,7 @@
 body{
   margin:0;
   border-radius: 0%;
-
+  
 }
 .sticky {
   position: fixed;
@@ -27,6 +27,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     height:22vh;
       /* min-height: fit-content; */
     font-family: 'Courier New', Courier, monospace;
@@ -36,7 +37,6 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
   }
 
   .logo a{
@@ -92,13 +92,12 @@ body{
     margin-right: 10px;
   }
   .topnav {
-    overflow: hidden;
-    z-index:1001 ;
-    background-color:#656DA4;
+    display: flex;
+    z-index:1 ;
   }
   
   .topnav a {
-    float: left;
+    float: top;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -142,7 +141,7 @@ body{
   }
 
   .topnav a.icon {
-    float: right;
+    float: left;
     display: block;
   }
 

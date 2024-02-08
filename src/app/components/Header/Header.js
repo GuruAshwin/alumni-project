@@ -63,6 +63,7 @@ export default function HeaderTem() {
           <div className="topnav" id="myTopnav">
               <a href="/">HOME</a>
               <a href="#awards">ALUMNI</a>
+              <a href="/routes/Events">EVENTS</a>
               <a href="/routes/Gallery">GALLERY</a>
               <a href="/routes/AboutUs">ABOUT US</a>
               <a href="#contact">CONTACT</a>
@@ -70,6 +71,7 @@ export default function HeaderTem() {
                 <i className="fa fa-bars"></i>
               </a>
           </div>
+          
         </div>
     </header>
     

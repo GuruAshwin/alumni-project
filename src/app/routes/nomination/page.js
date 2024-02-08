@@ -117,14 +117,11 @@ export default function Nomination() {
             <div className='nomination_box'>
                 <form onSubmit={handleSubmit}>
                     <div className="primary_nominbox">
-                        <div>
-                            <img src="/Aboutus.jpg" className='nomin_img' alt='photo'/>
-                        </div>
                         <div className='nomin_form'>
                         <div className="InputElem">
                             <h1>Nomination Form</h1>
                                 <p>First name</p>
-                                <input
+                                <input className="input"
                                     type="text"
                                     name="fullName"
                                     value={formData.fullName}
@@ -155,7 +152,7 @@ export default function Nomination() {
                             </div>
                             <div className="InputElem">
                                 <p>Contact Number</p>
-                                <input
+                                <input className="input"
                                     type="text"
                                     name="contactNumber"
                                     value={formData.contactNumber}
@@ -169,7 +166,7 @@ export default function Nomination() {
                             </div>
                             <div className="InputElem">
                                 <p>Email ID</p>
-                                <input
+                                <input className="input"
                                     type="email"
                                     name="email"
                                     value={formData.email}
@@ -183,7 +180,7 @@ export default function Nomination() {
                             </div>
                             <div className="InputElem">
                                 <p>Contact Address</p>
-                                <input
+                                <input className="input"
                                     type="text"
                                     name="contactAddress"
                                     value={formData.contactAddress}
@@ -210,7 +207,7 @@ export default function Nomination() {
                                     checked={formData.awardCategory === "Best Entrepreneur"}
                                 />
                                 <label>Best Entrepreneur</label><br/>
-                                <input
+                                <input 
                                     className='radio'
                                     type="radio"
                                     name="awardCategory"
@@ -219,7 +216,7 @@ export default function Nomination() {
                                     checked={formData.awardCategory === "Best Researcher"}
                                 />
                                 <label>Best Researcher</label><br/>
-                                <input
+                                <input 
                                     className='radio'
                                     type="radio"
                                     name="awardCategory"
@@ -228,7 +225,7 @@ export default function Nomination() {
                                     checked={formData.awardCategory === "Exemplary Alumni Award (Best contribution towards department/Institution)"}
                                 />
                                 <label>Exemplary Alumni Award (Best contribution towards department/Institution)</label><br/>
-                                <input
+                                <input 
                                     className='radio'
                                     type="radio"
                                     name="awardCategory"
@@ -237,7 +234,7 @@ export default function Nomination() {
                                     checked={formData.awardCategory === "Best Social Worker"}
                                 />
                                 <label>Best Social Worker</label><br/>
-                                <input
+                                <input 
                                     className='radio'
                                     type="radio"
                                     name="awardCategory"
@@ -249,7 +246,7 @@ export default function Nomination() {
                             </div>
                             <div className="InputElem">
                                 <p>Field of Work</p>
-                                <input
+                                <input 
                                     className='radio'
                                     type="radio"
                                     name="awardCategory"
@@ -258,7 +255,7 @@ export default function Nomination() {
                                     checked={formData.awardCategory === "IT"}
                                 />
                                 <label>IT</label><br/>
-                                <input
+                                <input 
                                     className='radio'
                                     type="radio"
                                     name="awardCategory"
@@ -267,7 +264,7 @@ export default function Nomination() {
                                     checked={formData.awardCategory === "Government Sector"}
                                 />
                                 <label>Government Sector</label><br/>
-                                <input
+                                <input 
                                     className='radio'
                                     type="radio"
                                     name="awardCategory"
@@ -276,7 +273,7 @@ export default function Nomination() {
                                     checked={formData.awardCategory === "Entrepreneur"}
                                 />
                                 <label>Entrepreneur</label><br/>
-                                <input
+                                <input 
                                     className='radio'
                                     type="radio"
                                     name="awardCategory"
@@ -289,7 +286,7 @@ export default function Nomination() {
                             </div>
                             <div className="InputElem">
                                 <p>Organization Name</p>
-                                <input
+                                <input className="input"
                                     type="text"
                                     name="organizationName"
                                     value={formData.organizationName}
@@ -301,7 +298,7 @@ export default function Nomination() {
                             </div>
                             <div className="InputElem">
                                 <p>Designation</p>
-                                <input
+                                <input className="input"
                                     type="text"
                                     name="designation"
                                     value={formData.designation}
@@ -384,7 +381,7 @@ export default function Nomination() {
                                 />
                             </div>
                             <div>
-                                <p>7. Resource person for webinar/ Workshop / Conference</p>
+                                <p>7. Resource person for webinar/ Workshop / Conference/</p>
                                 <textarea
                                     name="resourceperson"
                                     value={formData.resourceperson}

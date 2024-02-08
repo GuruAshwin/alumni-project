@@ -7,7 +7,7 @@ export default function CustomFooter() {
 
     return(
     <>
-        <footer className="container-fluid">
+        <footer className="container-fluid mb-0">
         <div className="f_logo">
           <div>
             <a href="/">

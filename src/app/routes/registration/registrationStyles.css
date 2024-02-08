@@ -1,35 +1,29 @@
-.InputFormContainer {
-    color:white;
+.Whole{
+  padding: 60px 0px 60px 0px;
+}
+.form {
+    color:black;
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    background-color: #2D3250;
-    max-width: 80%;
-    margin: 20px auto;
-    padding-right: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    border: 2px solid black;
+    max-width: 70%;
     border-radius: 40px;
 }
 
 h1{
     padding-top: 20px;
+    text-align: center;
 }
-
-
-.reg_img{
-    width: 50vw;
-    height: 130vh;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-}
-
-
-
 .InputForm{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 20px;
+    align-items: center;
+    margin: auto;
 }
 
 .inputElem {
@@ -47,16 +41,18 @@ input, select{
     height: 3em;
     padding: .4em;
     border-radius: 10px;
+    border: 1px solid #3a3a3a; /* Updated border color */
+    box-shadow: 1px 1px 1px 1px #656DA4;
+
 
 }
 .buttonCon{
     text-align: center;
 }
 button{
-    /* background-color: ; */
     border-radius: 15px;
     padding: 8px;
-    width: 90px;
+    width: 120%;
     border: none;
     font-weight: 600;
     margin: 15px;

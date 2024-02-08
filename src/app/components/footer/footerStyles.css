@@ -51,9 +51,10 @@ height: 100px;
 }
 .contact{
   margin-top: 20px;
-  text-align: left;
+  align-items:center ;
 }
 .contact span{
+  align-items:center ;
   display:block;
   padding: 8px;
 }
@@ -63,6 +64,7 @@ height: 100px;
 }
 
 .f_links a{
+  align-items:center ;
   text-decoration: none;
   color: white;
   opacity: 0.6;

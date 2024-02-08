@@ -92,12 +92,9 @@ export default function RegistrationScreen() {
             <div>
                 <HeaderTem />
             </div>
-            <div>
+            <div className="Whole">
             <form method="POST" onSubmit={handleSubmit}>
-                <div className="InputFormContainer">
-                    <div>
-                    <img src="/Aboutus.jpg" className="reg_img" alt="img"/>
-                    </div>
+                
                     <div className="form">
                     <h1>Registration Form</h1>
                     <div className="InputForm">
@@ -184,7 +181,6 @@ export default function RegistrationScreen() {
                         </div>
                     </div>
                     </div>
-                </div>
             </form>
             </div>
             <div>

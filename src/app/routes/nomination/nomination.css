@@ -1,72 +1,109 @@
-
+/* Container styling */
 .nomination_box {
-    color:white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    background-color: #2D3250;
-    max-width: 80%;
-    margin: 20px auto;
-    align-items: center;
-    padding-right: 20px;
-    border-radius: 40px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #3a3a3a; /* Updated border color */
+  margin: 50px;
+  border-radius: 8px;
+  background-color: white; /* Updated background color */
+  color: black; /* Updated font color */
 }
 
-.nomin_form{
-    padding: 10px;
+.primary_nominbox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-.nomin_img{
-    width: 50vw;
-    border-radius: 40px;
-    height: 80vh;
+.secondary_nomin {
+  display: flex;
+  flex-direction: column;
 }
 
-.primary_nominbox{
-    display: flex;
-    justify-content: space-between;
+.nomin_form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
 }
 
-.secondary_nomin{
-    margin: 20px;
+h1 {
+  margin-bottom: 20px;
 }
 
-.radio{
-    width: 3em;
+.InputElem {
+  margin-bottom: 20px;
 }
 
-/* .InputForm{
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-} */
-
-/* .inputElem {
-    display: flex;
-} */
-p{
-    font-weight: bold;
-    /* justify-content: left; */
-}
-input{
-    width:15em ;
-    padding: .4em;
-    border-radius: 10px;
-
+.input {
+  color: #3a3a3a; /* Updated font color */
+  margin: 10px;
 }
 
-.butt{
-   text-align: center;
+p {
+  margin: 20px 0px;
+  font-size: large;
+  font-weight: bold;
 }
 
-button{
-    border-radius: 15px;
-    padding: 8px;
-    width: 90px;
-    border: none;
-    font-weight: 600;
-    margin: 15px;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3a3a3a; /* Updated border color */
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 1px #656DA4;
+  background-color:white; /* Updated background color */
+  color: #3a3a3a; /* Updated font color */
+}
+
+::placeholder {
+  color: black; /* Updated placeholder color */
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+button.butt {
+  width: 17%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #2D3250;
+  color: white;
+  margin: 35px 0px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.butt:hover {
+  background-color: #656DA4;
+}
+label{
+  padding: 10px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nomination_box {
+      padding: 15px;
+      margin: 20px;
+  }
+  p {
+      font-size: medium;
+  }
+}
+
+@media (max-width: 650px) {
+  .nomination_box {
+      padding: 10px;
+      margin: 10px;
+  }
+  p {
+      font-size: medium;
+  }
 }
