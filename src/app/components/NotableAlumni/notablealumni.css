@@ -1,0 +1,69 @@
+.wholeContainer {
+    justify-content: space-evenly;
+    background-color: #656da4;
+    padding: 10px;
+    margin: 40px;
+    width: 90%;
+    margin-left: 5%;
+
+  }
+  .Head{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .Head button{ 
+    color: aliceblue;
+    background-color: #2D3250;
+    border-radius: 10px;
+    width: 130px;
+    font-size: large;
+    font-weight: bold;
+  }
+  .Head button:hover{
+    background-color:aliceblue;
+    color: #2D3250;
+  }
+  
+  .ImagesContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    margin-left:20px;
+
+  }
+  .eachContainer{
+    width: 16%;
+    text-align: center;
+    font-size: medium;
+  }
+
+  .eachContainer img{
+    border: 5px solid white;
+    border-radius: 100%;
+    filter: drop-shadow(-5px -5px 5px black);
+    filter: drop-shadow(5px 5px 5px black);
+    margin-bottom: 20px;
+
+  }
+  @media screen and (max-width: 768px) {
+    .ImagesContainer{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+
+    }
+    .eachContainer{
+    width: 40%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    }
+
+  }
+
+  
+
+  

@@ -15,7 +15,7 @@ export default function LoginScreen(){
             alert(`Response from backend: ${JSON.stringify(response.data)}`);
         })
         .catch(error => {
-            alert("Invalid Credientials");
+            alert(error);
         });
 }
 const handleFormData= async()=>{
@@ -75,6 +75,7 @@ return(
                       <input 
                       placeholder="Password" 
                       id="password" 
+                      type="password"
                       className="input"
                       required
                       ></input>

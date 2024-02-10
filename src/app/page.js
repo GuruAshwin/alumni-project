@@ -6,8 +6,11 @@ import HeaderTem from "./components/Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomFooter from "./components/footer/footer";
 import EventImage from "./components/eventImage/eventImage";
-import CollegeSlider from "./components/college_slider/collgeslider";
-import VideoPlayer from "./components/homevid/homevid"
+import CollegeSlider from "./components/NotableAlumni/notablealumni";
+import VideoPlayer from "./components/homevid/homevid";
+import TestimonialSlider from "./components/testimonial_slider/testimoni_template";
+import NotableAlumni from "./components/NotableAlumni/notablealumni"
+import Gallery from "./components/Gallery/galleryTemplate"
 export default function Home() {
   return (
     <div className="MainContainer">
@@ -22,7 +25,10 @@ export default function Home() {
         <EventImage></EventImage>
       </div>
       <div>
-        <CollegeSlider></CollegeSlider>
+        <Gallery></Gallery>
+      </div>
+      <div>
+        <NotableAlumni></NotableAlumni>
       </div>
       <CustomFooter></CustomFooter>
     </div>

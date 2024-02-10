@@ -1,19 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Home from "@/app/page";
-import Gallery from "../../routes/Gallery/page"
-import AboutUs from "../../routes/AboutUs/page"
+import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from "next/head";
 import "./Header.css";
 import { useRouter } from "next/navigation";
-import { redirect } from "next/dist/server/api-utils";
-import { usePathname } from "next/navigation";
 // import DropdownMenu from "@/app/components/dropdownmenu/dropdownmenu";
 import '@fortawesome/fontawesome-free/css/all.css';
-import Dropdown from 'react-bootstrap/Dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';  
-import {Nav, Navbar, Container, NavDropdown} from 'react-bootstrap'; 
 
 
 export default function HeaderTem() {
@@ -40,19 +33,20 @@ export default function HeaderTem() {
           <div className="Header">
             <div className="containerStyles">
               <div className="logo">
-                <div>
+                {/* <div>
                   <a href="/"><img src="/logonew1.png" alt="logo" className="img-fluid logoImg" /></a>
                 </div>
-                <a href="/">
-                <div className="logo-text">
+                <a href="/"> */}
+                <a href="/"><img src="/sathyabama_title.png" alt="logo" className="img-fluid w-600" /></a>
+
+                {/* <div className="logo-text">
                   <h1>SATHYABAMA</h1>
                   <div className="subtitle">
                     <h3>INSTITUTE OF SCIENCE AND TECHNOLOGY</h3>
                     <h3>(DEEMED TO BE UNIVERSITY)</h3>
                     <h3>CATEGORY-1 UNIVERSITY BY UGC</h3>
                   </div>
-                </div>
-                </a>
+                </div> */}
               </div>
               <div className="buttoncontainer">
               {!user && <button className="buttonStyles" onClick={handleLoginClick} >
@@ -66,7 +60,7 @@ export default function HeaderTem() {
               <a href="/routes/Events">EVENTS</a>
               <a href="/routes/Gallery">GALLERY</a>
               <a href="/routes/AboutUs">ABOUT US</a>
-              <a href="#contact">CONTACT</a>
+              <a href="/routes/ContactUs">CONTACT</a>
               <a className="icon" onClick={myFunction}>
                 <i className="fa fa-bars"></i>
               </a>

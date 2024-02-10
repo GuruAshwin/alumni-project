@@ -1,0 +1,29 @@
+/* TestimonialSlider.css */
+
+.testimonial-slider {
+    width: 100%;
+    overflow: hidden;
+   
+  }
+  
+  .testimonial {
+    display: none;
+    text-align: center;
+  }
+  
+  .testimonial img {/* Adjust as needed */
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .active {
+    display: block;
+  }
+  

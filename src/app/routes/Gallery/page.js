@@ -24,7 +24,7 @@ export default function Gallery() {
       <CardSliderTemplate slides={slides}></CardSliderTemplate>
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-12 each-container mr-lg-2">
+            <div className="col-lg-5 col-md-10 each-container mr-lg-2">
               <a href="/routes/Convocation">
                 <img
                   className="img-fluid convo-img"
@@ -36,7 +36,7 @@ export default function Gallery() {
                 <h1>Convocation</h1>
               </a>
             </div>
-            <div className="col-lg-6 col-md-12 each-container ml-lg-2">
+            <div className="col-lg-5 col-md-10 each-container ml-lg-2">
               <a href="/routes/Convocation">
                 <img
                   className="img-fluid convo-img"

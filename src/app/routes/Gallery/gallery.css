@@ -18,14 +18,15 @@
 
 .each-container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 40px;
 }
 
 /* .each-container:first-child {
-  margin-right: 10px; /* Add margin to the right of the first container 
+  margin-right: 10px; 
 }
 
 .each-container:last-child {
-  margin-left: 10px; /* Add margin to the left of the second container 
+  margin-left: 10px; 
 } */
 
 .each-container:hover {
