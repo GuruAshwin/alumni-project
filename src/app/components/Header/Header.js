@@ -56,7 +56,7 @@ export default function HeaderTem() {
           </div>
           <div className="topnav" id="myTopnav">
               <a href="/">HOME</a>
-              <a href="#awards">ALUMNI</a>
+              <a href="/routes/Alumni">ALUMNI</a>
               <a href="/routes/Events">EVENTS</a>
               <a href="/routes/Gallery">GALLERY</a>
               <a href="/routes/AboutUs">ABOUT US</a>

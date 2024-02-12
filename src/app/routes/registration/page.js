@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import HeaderTem from "@/app/components/Header/Header";
 import CustomFooter from "@/app/components/footer/footer";
 import "./registrationStyles.css";
-
+import axios from "axios" 
 export default function RegistrationScreen() {
     const [formData, setFormData] = useState({
         fullName: "",
@@ -69,10 +69,14 @@ export default function RegistrationScreen() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         if (validateForm()) {
-            // Handle form submission logic here
-            console.log("Form submitted successfully!");
+            axios.post('http://127.0.0.1:8100/regestrationdetails', {formData})
+            .then(response => {
+                alert(`Response from backend: ${JSON.stringify(response.data)}`);
+            })
+            .catch(error => {
+                alert(error);
+            });
         } else {
             console.log("Form has errors. Please fix them before submitting.");
         }

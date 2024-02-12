@@ -10,7 +10,7 @@ export default function LoginScreen(){
   function submitForm() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
-    axios.post('http://127.0.0.1:3000/harikiran', { username, password })
+    axios.post('http://127.0.0.1:8100/harikiran', { username, password })
         .then(response => {
             alert(`Response from backend: ${JSON.stringify(response.data)}`);
         })

@@ -1,0 +1,36 @@
+.wholepage{
+    margin: 20px;
+
+}
+.eachalumni{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 0px 50px 0px;
+}
+.eachImage{
+    width: 22%;
+}
+.Details{
+    width: 50%;
+}
+.ocup{
+    color: #656DA4;
+    font-weight: bold;
+}
+.line{
+    font-size: large;
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+    .eachalumni{
+        flex-direction: column;
+    }
+    .eachImage{
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    .Details{
+        width: 100%;
+    }
+}

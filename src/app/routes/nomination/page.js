@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import HeaderTem from '@/app/components/Header/Header';
 import CustomFooter from '@/app/components/footer/footer';
 import "./nomination.css";
-
+import axios from "axios"
 export default function Nomination() {
     const [formData, setFormData] = useState({
         fullName: "",
@@ -93,8 +93,13 @@ export default function Nomination() {
         e.preventDefault();
 
         if (validateForm()) {
-            // Handle form submission logic here
-            console.log("Form submitted successfully!");
+            axios.post('http://127.0.0.1:8100/nominationdetails', {formData})
+        .then(response => {
+            alert(`Response from backend: ${JSON.stringify(response.data)}`);
+        })
+        .catch(error => {
+            alert(error);
+        });
         } else {
             console.log("Form has errors. Please fix them before submitting.");
         }

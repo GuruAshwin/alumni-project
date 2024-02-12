@@ -34,6 +34,7 @@ body{
   }
   .logo{
     width: max-content;
+    padding-left:5em ;
   }
 /* 
   .logo {
@@ -108,8 +109,8 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
   }
   
   .topnav a:hover {
@@ -126,7 +127,7 @@ body{
     display: none;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -150,7 +151,7 @@ body{
   .buttonStyles {
     font-size: 14px; 
   }
-  .profileBtn {
+  /* .profileBtn {
     margin-right: 10px;
   }
   .logo-text h1 {
@@ -159,6 +160,10 @@ body{
 
   .logo-text h4 {
     font-size: 8px;
+  } */
+  .logo{
+    padding-left:0em ;
+  
   }
 }
 
@@ -167,6 +172,10 @@ body{
   .buttonStyles {
     width: auto; 
     margin-right: 0;
+}
+.logo{
+  padding-left:2em ;
+
 }
 
 }
