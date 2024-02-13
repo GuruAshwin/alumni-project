@@ -10,9 +10,9 @@ export default function EventImage() {
             <div className="imageContainer ">
                 <TestimonialSlider></TestimonialSlider>
             </div>
-            <div className="imageContainer">
+            {/* <div className="imageContainer">
                 <img src="/alumniportal.png" className="poster_img" alt="poster_img"></img>
-            </div>
+            </div> */}
         </div>
     );
 }

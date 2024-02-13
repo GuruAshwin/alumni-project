@@ -10,11 +10,14 @@ import CollegeSlider from "./components/NotableAlumni/notablealumni";
 import VideoPlayer from "./components/homevid/homevid";
 import TestimonialSlider from "./components/testimonial_slider/testimoni_template";
 import NotableAlumni from "./components/NotableAlumni/notablealumni"
-import Gallery from "./components/Gallery/galleryTemplate"
+import Gallery from "./components/Gallery/galleryTemplate";
+import { useContext } from 'react';
+import { AuthContext } from './contexts/AuthContext';
 export default function Home() {
+  const { isUserLoggedIn } = useContext(AuthContext);
   return (
     <div className="MainContainer">
-      <HeaderTem></HeaderTem>
+      <HeaderTem isLoggedIn={isUserLoggedIn}></HeaderTem>
       <div>
         <VideoPlayer></VideoPlayer>
       </div>

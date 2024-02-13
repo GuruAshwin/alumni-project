@@ -9,8 +9,8 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import 'bootstrap/dist/css/bootstrap.min.css';  
 
 
-export default function HeaderTem() {
-  const [user, setUser] = useState(null);
+const HeaderTem = ({isLoggedIn}) => {
+  
  
   const router = useRouter();
 
@@ -49,9 +49,9 @@ export default function HeaderTem() {
                 </div> */}
               </div>
               <div className="buttoncontainer">
-              {!user && <button className="buttonStyles" onClick={handleLoginClick} >
+              {!isLoggedIn && (<button className="buttonStyles" onClick={handleLoginClick} >
                 LOGIN
-              </button>}
+              </button>)}
             </div>
           </div>
           <div className="topnav" id="myTopnav">
@@ -81,3 +81,5 @@ export default function HeaderTem() {
     }
   }
 }
+
+export default HeaderTem;

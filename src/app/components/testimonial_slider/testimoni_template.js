@@ -5,12 +5,17 @@ import './TestimonialSlider.css'; // Import your CSS file
 const testimonialData = [
   {
     id: 1,
-    image: '/NotableAlumni/Notable alumni 1.png',
+    image: '/testimonal/Mariazeena.png',
     text: "This product is amazing! I've never experienced anything like it before."
   },
   {
     id: 2,
-    image: '/NotableAlumni/Notable alumni 1.png',
+    image: '/testimonal/Marie.jpg',
+    text: "I highly recommend this service to anyone looking for quality and reliability."
+  },
+  {
+    id: 3,
+    image: '/testimonal/SASIKALA.jpg',
     text: "I highly recommend this service to anyone looking for quality and reliability."
   }
   // Add more testimonials as needed
@@ -33,6 +38,7 @@ const TestimonialSlider = () => {
     <div className="testimonial-slider">
       {testimonialData.map((testimonial, index) => (
         <div
+          id="slides"
           key={testimonial.id}
           className={`testimonial ${index === currentTestimonialIndex ? 'active' : ''}`}
         >

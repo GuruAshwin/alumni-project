@@ -5,7 +5,7 @@ function VideoPlayer() {
   return (
     <div className="video-container">
       <video className="video" autoPlay loop muted>
-        <source src="/homevid.mp4" type="video/mp4" />
+        <source src="/homevid1.mp4" type="video/mp4" />
       </video>
     </div>
   );

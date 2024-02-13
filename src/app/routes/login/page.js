@@ -1,18 +1,31 @@
 'use client'
-import { useState } from "react";
+import { use, useState } from "react";
 import React from "react";
 import "./login.css";
 import { useRouter } from "next/navigation";
 import HomeScreen from "@/app/components/LandingPage/HomeScreen";
-import axios from "axios"
+import axios from "axios";
+import { useContext } from 'react';
+import { AuthContext } from '../../contexts/AuthContext';
+
 
 export default function LoginScreen(){
+  const [token, setToken] = useState('');
+  const { setIsUserLoggedIn } = useContext(AuthContext)
+  const router = useRouter();
   function submitForm() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
+    
     axios.post('http://127.0.0.1:8100/harikiran', { username, password })
         .then(response => {
-            alert(`Response from backend: ${JSON.stringify(response.data)}`);
+            // alert(`Response from backend: ${JSON.stringify(response.data)}`);
+            
+            const tokenforauth = response.data.token;
+            setToken(tokenforauth);
+            setIsUserLoggedIn(true);
+            document.cookie = `token=${tokenforauth}; path=/`;
+            router.push("/");
         })
         .catch(error => {
             alert(error);

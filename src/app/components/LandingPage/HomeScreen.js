@@ -24,6 +24,7 @@ const HomeScreen = () => {
             src="/carousel-img-1.jpg"
             alt="First slide"
           />
+          <h1>inage</h1>
         </Carousel.Item>
         <Carousel.Item className="CarouselItem">
           <img

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import HeaderTem from "@/app/components/Header/Header";
 import CustomFooter from "@/app/components/footer/footer";
 import "./registrationStyles.css";
-import axios from "axios" 
+import axios from "axios";
 export default function RegistrationScreen() {
     const [formData, setFormData] = useState({
         fullName: "",
