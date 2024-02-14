@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import './TestimonialSlider.css'; // Import your CSS file
+import './testimonialslider.css'; // Make sure this path is correct
 
 const testimonialData = [
   {
@@ -21,7 +21,7 @@ const testimonialData = [
   // Add more testimonials as needed
 ];
 
-const TestimonialSlider = () => {
+function TestimonialSlider(){
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 
   useEffect(() => {
@@ -38,12 +38,13 @@ const TestimonialSlider = () => {
     <div className="testimonial-slider">
       {testimonialData.map((testimonial, index) => (
         <div
-          id="slides"
           key={testimonial.id}
-          className={`testimonial ${index === currentTestimonialIndex ? 'active' : ''}`}
+          className={`testimonial-slide ${index === currentTestimonialIndex ? 'active' : ''}`}
         >
-          <img src={testimonial.image} alt={`Testimonial ${testimonial.id}`} />
-          <p className="testimonial-text">{testimonial.text}</p>
+          <div className="testimonial-content">
+            <img src={testimonial.image} alt={`Testimonial ${testimonial.id}`} className="testimonial-image" />
+            <p className="testimonial-text">{testimonial.text}</p>
+          </div>
         </div>
       ))}
     </div>

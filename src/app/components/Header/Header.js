@@ -56,11 +56,13 @@ const HeaderTem = ({isLoggedIn}) => {
           </div>
           <div className="topnav" id="myTopnav">
               <a href="/">HOME</a>
+              <a href="/routes/Posts">POST</a>
               <a href="/routes/Alumni">ALUMNI</a>
               <a href="/routes/Events">EVENTS</a>
               <a href="/routes/Gallery">GALLERY</a>
               <a href="/routes/AboutUs">ABOUT US</a>
               <a href="/routes/ContactUs">CONTACT</a>
+              {/* <a href="/routes/profile">PROFILE</a> */}
               <a className="icon" onClick={myFunction}>
                 <i className="fa fa-bars"></i>
               </a>

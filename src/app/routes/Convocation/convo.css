@@ -6,6 +6,7 @@
   text-align: center;
   box-sizing: border-box;
   height: 40vh;
+  transition: transform 0.3s ease;
 }
 
 .img-container img {

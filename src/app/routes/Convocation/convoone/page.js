@@ -32,6 +32,7 @@ export default function ConvocationOne() {
       <HeaderTem></HeaderTem>
       <div className="content-container">
         <div className="text-container"><h1>Convocation 2017</h1></div>
+        <CardSliderTemplate slides={slides}></CardSliderTemplate>
          <ImageTem images={images}></ImageTem>
       </div>
     </div>

@@ -1,0 +1,37 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    align-items: center;
+    text-align: center;
+    margin: 4em;
+    gap: 3em;
+    height: 100vh;
+    border: 2px solid black;
+  }
+  
+  .profile-picture-container {
+    position: relative;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    width: 25%;
+  }
+  
+  .profile-picture {
+    width: 50%;
+    height: auto;
+    border-radius: 50%; /* Creates a circular profile picture */
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+  
+  /* Additional styling for edit mode */
+  .profile-picture-container.edit-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Hide input file in view mode */
+  .profile-picture-container:not(.edit-mode) input[type="file"] {
+    display: none;
+  }

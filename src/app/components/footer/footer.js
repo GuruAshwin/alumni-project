@@ -8,10 +8,11 @@ export default function CustomFooter() {
         <>
             <div className="footer">
                 <div className="mainsection">
-                    <div className="logo">
+                    <div className="footlogo">
                         <img src="/sathyabama_title.png" alt="logo" className="img-fluid w-600" />
                     </div>
                     <div className="icons">
+                        <h6>Connect</h6>
                         <i className="fa-brands fa-facebook-f eachicons"></i>
                         <i className="fa-brands fa-twitter eachicons"></i>
                         <i className="fa-brands fa-linkedin-in eachicons"></i>

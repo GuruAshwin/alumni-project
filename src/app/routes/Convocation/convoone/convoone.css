@@ -105,3 +105,7 @@
 }
 
 /* ... (your existing styles) */
+.content-container{
+  font-size:large;
+  font-weight: medium;
+}

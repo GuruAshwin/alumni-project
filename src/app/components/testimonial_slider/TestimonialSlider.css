@@ -1,29 +1,37 @@
-/* TestimonialSlider.css */
-
 .testimonial-slider {
-    width: 100%;
-    overflow: hidden;
-   
-  }
-  
-  .testimonial {
-    display: none;
-    text-align: center;
-  }
-  
-  .testimonial img {/* Adjust as needed */
-    height: 100%;
-    width: 50%;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  
-  .testimonial-text {
-    font-style: italic;
-    margin-bottom: 20px;
-  }
-  
-  .active {
-    display: block;
-  }
-  
+  width: 100%;
+  overflow: hidden;
+}
+.testimonial-slide {
+  display: none; /* Hide all slides by default */
+  text-align: center; /* If you want to keep text aligned centrally for each testimonial */
+}
+
+/* This will make the active slide visible */
+.testimonial-slide.active {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  width: 40em; 
+}
+
+.testimonial-image {
+  width: 50px; 
+  height: 50px; 
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.testimonial-text {
+  flex: 1; 
+  font-style: italic;
+  margin-bottom: 20px; 
+  font-size: larger;
+}

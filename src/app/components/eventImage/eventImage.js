@@ -2,7 +2,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./image.css";
-import TestimonialSlider from "@/app/components/testimonial_slider/testimoni_template";
+import TestimonialSlider from "../testimonial_slider/testimoni_template";
+
 
 export default function EventImage() {
     return(
@@ -10,7 +11,7 @@ export default function EventImage() {
             <div className="imageContainer ">
                 <TestimonialSlider></TestimonialSlider>
             </div>
-            {/* <div className="imageContainer">
+            {/* <div claTssName="imageContainer">
                 <img src="/alumniportal.png" className="poster_img" alt="poster_img"></img>
             </div> */}
         </div>

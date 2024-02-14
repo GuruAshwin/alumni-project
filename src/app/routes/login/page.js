@@ -11,19 +11,19 @@ import { AuthContext } from '../../contexts/AuthContext';
 
 export default function LoginScreen(){
   const [token, setToken] = useState('');
-  const { setIsUserLoggedIn } = useContext(AuthContext)
+  const { setIsUserLoggedIn } = useContext(AuthContext);
   const router = useRouter();
   function submitForm() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
-    
+    localStorage.setItem('isUserLoggedIn', 'false');
     axios.post('http://127.0.0.1:8100/harikiran', { username, password })
         .then(response => {
             // alert(`Response from backend: ${JSON.stringify(response.data)}`);
             
             const tokenforauth = response.data.token;
             setToken(tokenforauth);
-            setIsUserLoggedIn(true);
+            localStorage.setItem('isUserLoggedIn', 'true');
             document.cookie = `token=${tokenforauth}; path=/`;
             router.push("/");
         })

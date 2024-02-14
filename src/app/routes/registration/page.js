@@ -1,10 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import HeaderTem from "@/app/components/Header/Header";
 import CustomFooter from "@/app/components/footer/footer";
 import "./registrationStyles.css";
 import axios from "axios";
+import { AuthContext } from '../../contexts/AuthContext';
 export default function RegistrationScreen() {
+    const { isUserLoggedIn } = useContext(AuthContext);
     const [formData, setFormData] = useState({
         fullName: "",
         yearOfPassing: "",
@@ -94,7 +96,7 @@ export default function RegistrationScreen() {
     return (
         <div className="RegForm">
             <div>
-                <HeaderTem />
+                <HeaderTem isLoggedIn={isUserLoggedIn} />
             </div>
             <div className="Whole">
             <form method="POST" onSubmit={handleSubmit}>
