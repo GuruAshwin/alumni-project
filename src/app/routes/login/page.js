@@ -98,7 +98,7 @@ return(
                     </div>
                     <div className="subtext">
                       <p>Forgot Password! </p>
-                      <a href="#">Click here</a>
+                      <a href="/routes/ForgotPassword">Click here</a>
                     </div>
                     <div className="regi">
                       <a href="#">Create New Account</a>

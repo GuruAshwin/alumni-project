@@ -3,18 +3,11 @@ body{
   border-radius: 0%;
   
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
 
 .Header{
   background-color:#656DA4;
   height: auto;
   top: 0;
-  z-index: 1000;
   margin: 0 auto;
   align-items: center;
   padding-top: 0em;
@@ -28,7 +21,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height:22vh;
+    height:16vh;
       /* min-height: fit-content; */
     font-family: 'Courier New', Courier, monospace;
   }
@@ -36,50 +29,6 @@ body{
     width: max-content;
     padding-left:5em ;
   }
-/* 
-  .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .logo a{
-    text-decoration: none;
-  }
-
-  /* .logoImg {
-  width: 100px;
-  height: 100px;
-  }
-  
-  .logo-text {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: aliceblue;
-    padding: 20px;
-  }
-  .logo-text h1 {
-    margin-bottom: 10px;
-    border-bottom: 2px solid white;
-    font-size: 2.8vw;
-    font-family: 'Inter', sans-serif;
-    font-weight: bolder;
-  }
-  
-  .logo-text h3 {
-    font-size: 0.75em;
-    margin: auto;
-    font-family: 'Inter', sans-serif;
-    font-weight: bolder;
-  }
-
-  .subtitle {
-    text-align: center;
-  } */
-
-
   .buttonStyles {
     background-color: #ffffff;
     padding: .5em 1em;
@@ -97,8 +46,8 @@ body{
   }
   .topnav {
     overflow: hidden;
-    /* margin-left: 40px;
-    margin-right: 40px; */
+    background-color: #656DA4;
+    width: 100%;
   }
   
   .topnav a {

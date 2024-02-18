@@ -9,7 +9,7 @@ import axios from 'axios';
 function AddJobPostForm({ onAddJobPost }) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [photoUrl, setPhotoUrl] = useState('');
+  const [email, setEmail] = useState('');
   const [datePosted, setDatePosted] = useState('');
   const router = useRouter();
   // Assuming this is your AddJobPostForm component
@@ -27,7 +27,7 @@ const handleSubmit = (e) => {
   const formData = {
     title,
     description,
-    photoUrl,
+    email,
     datePosted
   };
 
@@ -66,10 +66,10 @@ const handleSubmit = (e) => {
           required
         />
         <input
-          type="url"
-          value={photoUrl}
-          onChange={(e) => setPhotoUrl(e.target.value)}
-          placeholder="Photo URL (optional)"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Mail Id"
         />
         <input
           type="date"

@@ -1,99 +1,76 @@
-/* General Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-}
 
-img {
-  max-width: 100%;
+/* Assuming you have a CSS file or CSS module linked to this component */
+
+.contentContainer {
+  max-width: 90%; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  margin-top: 2em;;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   height: auto;
 }
 
-/* Header and Footer */
-header, footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* Post and JobPost Containers */
-.contentContainer {
+.jobFeed {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin: 20px 0;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+
 }
 
-.post, .jobFeed {
-  background: #fff;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+@media screen and (max-width: 768px) {
+  .jobFeed {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 
-.postImage {
-  border-radius: 8px;
-}
-
-.postDescription, h3 {
-  margin-top: 15px;
-}
-
-/* Job Post Specific */
-.jobFeed button {
-  background: #4CAF50;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.jobFeed button:disabled {
-  background: #ccc;
-}
-
-.jobFeed button:hover:not(:disabled) {
-  background: #45a049;
-}
-
-/* Add Post Button */
-.addPostButton {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.addPostButton button {
-  background: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.addPostButton button:hover {
-  background: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .contentContainer {
-    grid-template-columns: 1fr;
   }
 }
+
+.MainContainer {
+  height: 100vh;
+}
+
+
+
+.jobPostImage {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.jobPostDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobPostTitle {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.jobPostDescription {
+  font-size: 1rem;
+}
+
+.addJobButton {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.addJobButton button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2em;
+  margin-top: 2em ;
+}
+
+.addJobButton button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* You can add more styles as needed */

@@ -24,7 +24,7 @@
 }
 
 .addJobPostForm form input[type="text"],
-.addJobPostForm form input[type="url"],
+.addJobPostForm form input[type="email"],
 .addJobPostForm form input[type="date"],
 .addJobPostForm form textarea {
   padding: 10px;

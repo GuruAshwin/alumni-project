@@ -1,6 +1,9 @@
 .footer{
   height: 24vh;
   align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 .mainsection{
   background-color: #2D3250;
@@ -35,6 +38,10 @@
   text-align: center;
   border-radius: 7px;
   cursor: pointer;
+  color: white;
+  &:hover{
+    color:blue;
+  }
 }
 
 .nav a{
