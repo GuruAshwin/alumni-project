@@ -39,15 +39,25 @@ export default function TestimonialSlider(){
   return (
     <div className="testimonial-slider">
       {testimonialData.map((testimonial, index) => (
+
+      <div className="imageGrid">
+      <div className="imageContainer ">
         <div
-          key={testimonial.id}
-          className={`testimonial-slide ${index === currentTestimonialIndex ? 'active' : ''}`}
-        >
-          <div className="testimonial-content">
-            <img src={testimonial.image} alt={`Testimonial ${testimonial.id}`} className="testimonial-image" />
-            <p className="testimonial-text">{testimonial.text}</p>
+            key={testimonial.id}
+            className={`testimonial-slide ${index === currentTestimonialIndex ? 'active' : ''}`}
+          >
+            <div className="testimonial-content">
+              <img src={testimonial.image} alt={`Testimonial ${testimonial.id}`} className="testimonial-image" />
+              <p className="testimonial-text">{testimonial.text}</p>
+            </div>
           </div>
-        </div>
+      </div>
+      {/* <div claTssName="imageContainer">
+          <img src="/alumniportal.png" className="poster_img" alt="poster_img"></img>
+      </div> */}
+      </div>
+
+      
       ))}
     </div>
   );

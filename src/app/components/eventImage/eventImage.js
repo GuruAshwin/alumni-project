@@ -2,7 +2,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./image.css";
-import TestimonialSlider from "../Testimonial_slider/Testimoni_template";
+import TestimonialSlider from "../Testimonial_slider/Testimonialtemplate";
 
 
 export default function EventImage() {

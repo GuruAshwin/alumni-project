@@ -40,3 +40,6 @@ next-env.d.ts
 
 #duplicate files
 /donotCommit
+
+#dependencies
+package-lock.json
