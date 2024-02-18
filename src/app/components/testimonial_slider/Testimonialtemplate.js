@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import "./Testimonialslider.css";  // Make sure this path is correct
+import "./TestimonialSlider.css";  // Make sure this path is correct
 
 
 
