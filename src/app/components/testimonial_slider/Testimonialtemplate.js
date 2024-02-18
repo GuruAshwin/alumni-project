@@ -4,7 +4,7 @@ import "./testimonialslider.css";  // Make sure this path is correct
 
 
 
-export default function TestimonialSlider(){
+export function TestimonialSlider(){
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 
   const testimonialData = [
