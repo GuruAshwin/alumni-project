@@ -5,6 +5,7 @@ import HeaderTem from "@/app/components/Header/Header";
 import CustomFooter from "@/app/components/footer/footer";
 import "./gallery.css";
 import CardSliderTemplate from "@/app/components/cards_template/cards";
+import Image from "next/image";
 export default function Gallery() {
   const slides = [
     { image: '/sliding/IMG_9867.JPG', description: "" },
@@ -26,7 +27,7 @@ export default function Gallery() {
           <div className="row">
             <div className="col-lg-5 col-md-10 each-container mr-lg-2">
               <a href="/routes/Convocation">
-                <img
+                <Image
                   className="img-fluid convo-img"
                   src="/convocation/2017/IMG_0361.jpg"
                   alt="Convocation"
@@ -38,7 +39,7 @@ export default function Gallery() {
             </div>
             <div className="col-lg-5 col-md-10 each-container ml-lg-2">
               <a href="/routes/Convocation">
-                <img
+                <Image
                   className="img-fluid convo-img"
                   src="/sliding/IMG_9879.JPG"
                   alt="Alumni"

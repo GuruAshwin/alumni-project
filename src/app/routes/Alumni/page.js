@@ -1,7 +1,8 @@
 import React from "react";
 import HeaderTem from "@/app/components/Header/Header";
 import "./alumni.css";
-import CustomFooter from "@/app/components/footer/footer";;
+import CustomFooter from "@/app/components/footer/footer";
+import Image from "next/image";
 export default function Alumnis() {
     return (
         <>  
@@ -9,7 +10,7 @@ export default function Alumnis() {
             <div className="wholepage">
                 <div className="eachalumni">
                     <div className="eachImage">
-                        <img src="/NotableAlumni/Notable alumni 1.png" alt="Alumni 1" className="img-fluid" />
+                        <Image src="/NotableAlumni/Notable alumni 1.png" alt="Alumni 1" className="img-fluid" />
                     </div>
                     <div className="Details">
                         <h3>PRASHANTH PANDEY</h3>
@@ -23,7 +24,7 @@ Prashant Pandey believes in leading by example and has thus devoted his time in 
                 <p className="line">__________________________________________________________________________________________________________________________________________________</p>
                 <div className="eachalumni">
                     <div className="eachImage">
-                        <img src="/NotableAlumni/Notable alumni 2.png" alt="Alumni 2" className="img-fluid" />
+                        <Image src="/NotableAlumni/Notable alumni 2.png" alt="Alumni 2" className="img-fluid" />
 
                     </div>
                     <div className="Details">
@@ -35,7 +36,7 @@ Prashant Pandey believes in leading by example and has thus devoted his time in 
                 <p className="line">__________________________________________________________________________________________________________________________________________________</p>
                 <div className="eachalumni">
                     <div className="eachImage">
-                        <img src="/NotableAlumni/Notable alumni 3.png" alt="Alumni 3" className="img-fluid" />
+                        <Image src="/NotableAlumni/Notable alumni 3.png" alt="Alumni 3" className="img-fluid" />
                     </div>
                     <div className="Details">
                         <h3>PRADEEP JOHN</h3>
@@ -46,7 +47,7 @@ Prashant Pandey believes in leading by example and has thus devoted his time in 
                 <p className="line">__________________________________________________________________________________________________________________________________________________</p>
                 <div className="eachalumni">
                     <div className="eachImage">
-                        <img src="/NotableAlumni/Notable alumni 4.png" alt="Alumni 4" className="img-fluid" />
+                        <Image src="/NotableAlumni/Notable alumni 4.png" alt="Alumni 4" className="img-fluid" />
                     </div>
                     <div className="Details">
                         <h3>ASHISH AMAN</h3>
@@ -57,7 +58,7 @@ Prashant Pandey believes in leading by example and has thus devoted his time in 
                 <p className="line">__________________________________________________________________________________________________________________________________________________</p>
                 <div className="eachalumni">
                     <div className="eachImage">
-                        <img src="/NotableAlumni/Notable alumni 5.png" alt="Alumni 5" className="img-fluid" />
+                        <Image src="/NotableAlumni/Notable alumni 5.png" alt="Alumni 5" className="img-fluid" />
                     </div>
                     <div className="Details">
                         <h3>TALLURI VIDYA SREE</h3>

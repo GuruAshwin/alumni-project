@@ -7,6 +7,7 @@ import HomeScreen from "@/app/components/LandingPage/HomeScreen";
 import axios from "axios";
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
+import Image from "next/image";
 
 
 export default function LoginScreen(){
@@ -41,7 +42,7 @@ return(
       <div className="mainContainer">
          <div className="logo"> 
                <div>
-                 <img src="/logonew1.png" alt="logo" className="logoImg"></img>
+                 <Image src="/logonew1.png" alt="logo" className="logoImg"></Image>
                </div>
                <div className="logo-text">
                  <h1>SATHYABAMA</h1>
@@ -54,13 +55,13 @@ return(
          </div>
          <div className="loginContianer">
           <div className="bg-img-container">
-            <img src="/background-img.png" className="bg-img"></img>
+            <Image src="/background-img.png" className="bg-img"></Image>
           </div>
           <div className="login-form">
               <div className="slogo">
                 <div className="sathyabama_logo">
                   <div>
-                    <img src="/logonew1.png" alt="logo" className="slogoImg"></img>
+                    <Image src="/logonew1.png" alt="logo" className="slogoImg"></Image>
                   </div>
                   <div className="s-logo-text">
                     <h1>SATHYABAMA</h1>

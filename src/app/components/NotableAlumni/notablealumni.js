@@ -1,6 +1,7 @@
 import React from "react";
 import "./notablealumni.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Image from "next/image";
 export default function NotableAlumni() {
 
   return (
@@ -13,7 +14,7 @@ export default function NotableAlumni() {
           <div className="ImagesContainer">
             <div className="eachContainer">
               <div className="eachImage">
-              <img src="/NotableAlumni/Notable alumni 1.png" alt="Alumni 1" className="img-fluid"/>
+              <Image src="/NotableAlumni/Notable alumni 1.png" alt="Alumni 1" className="img-fluid"/>
               </div>
               <div className="Details">
               <h3>PRASHANTH PANDEY</h3>
@@ -22,7 +23,7 @@ export default function NotableAlumni() {
             </div>
             <div className="eachContainer">
               <div className="eachImage">
-              <img src="/NotableAlumni/Notable alumni 2.png" alt="Alumni 2"className="img-fluid" />
+              <Image src="/NotableAlumni/Notable alumni 2.png" alt="Alumni 2"className="img-fluid" />
 
               </div>
               <div className="Details">
@@ -32,7 +33,7 @@ export default function NotableAlumni() {
             </div>
             <div className="eachContainer">
               <div className="eachImage">
-              <img src="/NotableAlumni/Notable alumni 3.png" alt="Alumni 3" className="img-fluid"/>
+              <Image src="/NotableAlumni/Notable alumni 3.png" alt="Alumni 3" className="img-fluid"/>
               </div>
               <div className="Details">
               <h3>PRADEEP JOHN</h3>
@@ -41,7 +42,7 @@ export default function NotableAlumni() {
             </div>
             <div className="eachContainer">
               <div className="eachImage">
-              <img src="/NotableAlumni/Notable alumni 4.png" alt="Alumni 4" className="img-fluid"/>
+              <Image src="/NotableAlumni/Notable alumni 4.png" alt="Alumni 4" className="img-fluid"/>
               </div>
               <div className="Details">
               <h3>ASHISH AMAN</h3>
@@ -50,7 +51,7 @@ export default function NotableAlumni() {
             </div >
             <div className="eachContainer">
               <div className="eachImage">
-              <img src="/NotableAlumni/Notable alumni 5.png" alt="Alumni 5" className="img-fluid"/>
+              <Image src="/NotableAlumni/Notable alumni 5.png" alt="Alumni 5" className="img-fluid"/>
               </div>
               <div className="Details">
               <h3>TALLURI VIDYA SREE</h3>

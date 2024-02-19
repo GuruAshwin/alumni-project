@@ -1,6 +1,7 @@
 // convoone.js
 import React, { useState } from "react";
 import "./imagetemp.css";
+import Image from "next/image";
 
 export default function ImageTem({ images }) {
   const [showSlideshow, setShowSlideshow] = useState(false);
@@ -31,7 +32,7 @@ export default function ImageTem({ images }) {
       <div className="Main-container">
         {images.map((image, index) => (
           <div key={index} className="image-container" onClick={() => openSlideshow(index)}>
-            <img src={image} alt={`Image ${index + 1}`} />
+            <Image src={image} alt={`Image ${index + 1}`} />
           </div>
         ))}
 
@@ -40,7 +41,7 @@ export default function ImageTem({ images }) {
             <div className="slideshow-content">
               <span className="close-btn" onClick={closeSlideshow}>&times;</span>
               <button className="nav-btn prev-btn" onClick={prevSlide}>&lt;</button>
-              <img src={images[selectedImage]} alt={`Slideshow Image ${selectedImage + 1}`} />
+              <Image src={images[selectedImage]} alt={`Slideshow Image ${selectedImage + 1}`} />
               <button className="nav-btn next-btn" onClick={nextSlide}>&gt;</button>
             </div>
           </div>

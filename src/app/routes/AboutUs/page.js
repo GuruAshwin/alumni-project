@@ -3,6 +3,7 @@ import "./aboutus.css";
 import HeaderTem from "@/app/components/Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomFooter from "@/app/components/footer/footer";
+import Image from "next/image";
 
 export default function AboutUs(){
     return(
@@ -11,7 +12,7 @@ export default function AboutUs(){
             <div className="aboutCon">
                 <h1>About Us</h1>
                 <div className="aboutimg">
-                    <img src="/Aboutus.jpg" alt="Sathyabama" className="img-fluid " />
+                    <Image src="/Aboutus.jpg" alt="Sathyabama" className="img-fluid " />
                 </div>
                 <div className="about">
                     <p>Sathyabama is a prestigious institution which excels in the fields of Engineering,

@@ -24,7 +24,7 @@ const CardSliderTemplate = ({ slides }) => {
         <Carousel interval={2000} className='carousel-container'>
           {slides.map((slide, index) => (
             <Carousel.Item key={index} className='carousel-item'>
-              <img
+              <Image
                 className='d-block m-auto img-fluid slides mt-4 mb-4'
                 src={slide.image}
                 alt={`Slide ${index + 1}`}

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './profile.css'; // Import your CSS file for styling
 import HeaderTem from '@/app/components/Header/Header';
 import CustomFooter from '@/app/components/footer/footer';
+import Image from 'next/image';
 function EditableProfile(){
     const [userInfo, setUserInfo] = useState({
         username: 'JohnDoe',
@@ -53,7 +54,7 @@ function EditableProfile(){
                 <h2>Alumni of Sathyabama</h2>
                 <div className={`profile-picture-container ${isEditMode ? 'edit-mode' : ''}`}>
                     {userInfo.profilePicture && (
-                        <img
+                        <Image
                             src={userInfo.profilePicture}
                             alt="Profile"
                             className="profile-picture"

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import "./TestimonialSlider.css";  // Make sure this path is correct
+import Image from 'next/image';
 
 
 
@@ -47,7 +48,7 @@ export function TestimonialSlider(){
             className={`testimonial-slide ${index === currentTestimonialIndex ? 'active' : ''}`}
           >
             <div className="testimonial-content">
-              <img src={testimonial.image} alt={`Testimonial ${testimonial.id}`} className="testimonial-image" />
+              <Image src={testimonial.image} alt={`Testimonial ${testimonial.id}`} className="testimonial-image" />
               <p className="testimonial-text">{testimonial.text}</p>
             </div>
           </div>
