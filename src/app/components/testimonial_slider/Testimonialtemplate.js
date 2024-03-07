@@ -32,7 +32,7 @@ export function TestimonialSlider(){
       setCurrentTestimonialIndex(prevIndex =>
         prevIndex === testimonialData.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // Change slide every 5 seconds
+    }, [5000]); // Change slide every 5 seconds
 
     return () => clearInterval(intervalId);
   });
