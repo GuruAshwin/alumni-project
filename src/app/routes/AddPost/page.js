@@ -88,18 +88,4 @@ const handleSubmit = (e) => {
 
 
 
-function JobPostsList({ jobPosts }) {
-  return (
-    <div>
-      {jobPosts.map((post, index) => (
-        <div key={index}>
-          <h3>{post.title}</h3>
-          {/* Display other post details */}
-          <p>{post.description}</p>
-          {/* Check and display if the post is active or expired based on datePosted */}
-          <p>Status: {new Date() - new Date(post.datePosted) < 30 * 24 * 60 * 60 * 1000 ? 'Active' : 'Expired'}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
+
