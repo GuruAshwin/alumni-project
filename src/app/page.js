@@ -12,9 +12,9 @@ import VideoPlayer from "./components/homevid/homevid";
 import NotableAlumni from "./components/NotableAlumni/notablealumni"
 import Gallery from "./components/Gallery/galleryTemplate";
 import { useContext } from 'react';
-import { AuthContext } from './contexts/AuthContext';
+import { AuthProvider } from './contexts/AuthContext';
 export default function Home() {
-  const { isUserLoggedIn } = useContext(AuthContext);
+  const { isUserLoggedIn } = useContext(AuthProvider);
   return (
     <div className="MainContainer">
       <HeaderTem isLoggedIn={isUserLoggedIn}></HeaderTem>
