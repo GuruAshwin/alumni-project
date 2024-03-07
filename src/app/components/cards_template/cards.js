@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './cardsTem.css';
+import Image from 'next/image';
 
 const CardSliderTemplate = ({ slides }) => {
   useEffect(() => {

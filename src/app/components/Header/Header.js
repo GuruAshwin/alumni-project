@@ -34,7 +34,7 @@ const HeaderTem = ({ isLoggedIn }) => {
         <div className="Header">
           <div className="containerStyles">
             <div className="logo">
-              <a href="/"><Image src="/sathyabama_title.png" alt="logo" className="img-fluid w-600" /></a>
+              <a href="/"><img src="/sathyabama_title.png" alt="logo" className="img-fluid w-600" /></a>
             </div>
             <div className="buttoncontainer">
               {!isLoggedIn && (<button className="buttonStyles" onClick={handleLoginClick} >

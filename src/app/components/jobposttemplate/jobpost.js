@@ -20,8 +20,6 @@
 
 import React from 'react';
 import "./jobpoststyles.css";
-import { render } from 'react-dom';
-import { useState } from 'react';
 function JobPost({jobDetails}) {
   const isActive = new Date() - new Date(jobDetails.datePosted) < 30 * 24 * 60 * 60 * 1000;
   const onApply = (jobTitle) => {

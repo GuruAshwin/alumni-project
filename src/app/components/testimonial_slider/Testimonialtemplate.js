@@ -35,7 +35,7 @@ export function TestimonialSlider(){
     }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [testimonialData.length]);
 
   return (
     <div className="testimonial-slider">
