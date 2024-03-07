@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import "./TestimonialSlider.css"; // Make sure this path is correct
-import { Image } from 'react-bootstrap';
 
 export function TestimonialSlider() {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
@@ -41,7 +40,7 @@ export function TestimonialSlider() {
         <div key={testimonial.id} className="imageGrid">
           <div className={`testimonial-slide ${index === currentTestimonialIndex ? 'active' : ''}`}>
             <div className="testimonial-content">
-              <Image src={testimonial.image} alt={`Testimonial ${testimonial.id}`} className="testimonial-image" />
+              <img src={testimonial.image} alt={`Testimonial ${testimonial.id}`} className="testimonial-image" />
               <p className="testimonial-text">{testimonial.text}</p>
             </div>
           </div>

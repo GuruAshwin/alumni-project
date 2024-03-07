@@ -6,7 +6,8 @@ import CustomFooter from "@/app/components/footer/footer";
 import { useRouter } from "next/navigation";
 import axios from 'axios';
 // Assuming this component is correctly imported in your routing setup
-export function AddJobPostForm({ onAddJobPost }) {
+
+export default function AddJobPostForm({ onAddJobPost }) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [email, setEmail] = useState('');
@@ -14,35 +15,35 @@ export function AddJobPostForm({ onAddJobPost }) {
   const router = useRouter();
   // Assuming this is your AddJobPostForm component
 // Assuming this is your AddJobPostForm component
-const handleSubmit = (e) => {
-  e.preventDefault();
- /* router.push("/routes/Posts");*/
-  // Pass the new job post back to the parent component
-  // Clear form fields after submission
- /* JobPostsList({ jobPosts });*/
-  // setTitle('');
-  // setDescription('');
-  // setPhotoUrl('');
-  // setDatePosted('');
-  const formData = {
-    title,
-    description,
-    email,
-    datePosted
-  };
-
-
-  axios.post('http://127.0.0.1:8100/addposts', {formData})
-      .then(response => {
-        // Handle success, maybe show a success message or redirect the user
-        alert(`Response from backend: ${JSON.stringify(response.data)}`);
-        // alert('Job post added successfully:', response.data);
-      })
-      .catch(error => {
-        // Handle error, maybe show an error message to the user
-        console.error('Error adding job post:', error);
-      });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  /* router.push("/routes/Posts");*/
+    // Pass the new job post back to the parent component
+    // Clear form fields after submission
+  /* JobPostsList({ jobPosts });*/
+    // setTitle('');
+    // setDescription('');
+    // setPhotoUrl('');
+    // setDatePosted('');
+    const formData = {
+      title,
+      description,
+      email,
+      datePosted
     };
+
+
+    axios.post('http://127.0.0.1:8100/addposts', {formData})
+        .then(response => {
+          // Handle success, maybe show a success message or redirect the user
+          alert(`Response from backend: ${JSON.stringify(response.data)}`);
+          // alert('Job post added successfully:', response.data);
+        })
+        .catch(error => {
+          // Handle error, maybe show an error message to the user
+          console.error('Error adding job post:', error);
+        });
+      };
 
     function JobPostsList({ jobPosts }) {
       return (

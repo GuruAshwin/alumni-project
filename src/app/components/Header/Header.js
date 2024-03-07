@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 // import DropdownMenu from "@/app/components/dropdownmenu/dropdownmenu";
 import '@fortawesome/fontawesome-free/css/all.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Image from "next/image";
+
 
 
 const HeaderTem = ({ isLoggedIn }) => {

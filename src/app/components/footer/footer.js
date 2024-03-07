@@ -2,7 +2,7 @@ import React from "react";
 import "./footerStyles.css";
 import { useRouter } from "next/navigation";
 import '@fortawesome/fontawesome-free/css/all.css';
-import Image from "next/image";
+
 export default function CustomFooter() {
 
     return (
@@ -10,7 +10,7 @@ export default function CustomFooter() {
             <div className="footer">
                 <div className="mainsection">
                     <div className="footlogo">
-                        <Image src="/sathyabama_title.png" alt="logo" className="img-fluid w-600" />
+                        <img src="/sathyabama_title.png" alt="logo" className="img-fluid w-600" />
                     </div>
                     <div className="icons">
                         <h6>Connect</h6>
