@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import "./TestimonialSlider.css";  // Make sure this path is correct
-import Image from 'next/image';
+import { Image } from 'react-bootstrap';
 
 
 
@@ -35,7 +35,7 @@ export function TestimonialSlider(){
     }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(intervalId);
-  }, [testimonialData]);
+  }, [testimonialData.length]);
 
   return (
     <div className="testimonial-slider">

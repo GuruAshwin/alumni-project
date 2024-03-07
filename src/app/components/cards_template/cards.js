@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './cardsTem.css';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const CardSliderTemplate = ({ slides }) => {
   useEffect(() => {
@@ -25,7 +25,7 @@ const CardSliderTemplate = ({ slides }) => {
         <Carousel interval={2000} className='carousel-container'>
           {slides.map((slide, index) => (
             <Carousel.Item key={index} className='carousel-item'>
-              <Image
+              <img
                 className='d-block m-auto img-fluid slides mt-4 mb-4'
                 src={slide.image}
                 
