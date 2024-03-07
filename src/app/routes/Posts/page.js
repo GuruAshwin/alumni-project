@@ -125,9 +125,9 @@ function PostPage() {
     }
   };
 
-  // const onClickfunction = () => {
-  //   router.push("/routes/AddPost");
-  // }
+  const onClickfunction = () => {
+    router.push("/routes/AddPost");
+  }
 
   
 
