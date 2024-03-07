@@ -28,7 +28,6 @@ const CardSliderTemplate = ({ slides }) => {
               <img
                 className='d-block m-auto img-fluid slides mt-4 mb-4'
                 src={slide.image}
-                
               />
               <h1>{slide.description}</h1>
             </Carousel.Item>
