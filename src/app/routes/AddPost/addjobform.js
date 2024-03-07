@@ -1,5 +1,5 @@
 // src/app/routes/AddPost/addjobform.js
-
+"use client";
 import React, { useState } from 'react';
 import "./addjobform.css";
 import { useRouter } from "next/navigation";
