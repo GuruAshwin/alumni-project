@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './HomeScreen.css';
-import Image from 'next/image';
-
 const HomeScreen = () => {
   useEffect(() => {
     // Load Bootstrap JavaScript only on the client side
@@ -20,7 +18,7 @@ const HomeScreen = () => {
     <div className='Slideshow'>
       <Carousel interval={2000} className="CarouselContainer">
         <Carousel.Item className="CarouselItem">
-          <Image
+          <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
             src="/carousel-img-1.jpg"
             alt="First slide"
@@ -28,27 +26,27 @@ const HomeScreen = () => {
           <h1>inage</h1>
         </Carousel.Item>
         <Carousel.Item className="CarouselItem">
-          <Image
+          <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
             src="/carousel-img-2.jpg"
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item className="CarouselItem">
-          <Image
+          <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
             src="/carousel-img-3.jpg"
             alt="third slide"
           />
         </Carousel.Item>
         <Carousel.Item className="CarouselItem">
-          <Image
+          <img
             className="d-block m-auto img-fluid Slides mt-4 mb-4"
             src="/carousel-img-4.jpg"
             alt="fourth slide"
           />
         </Carousel.Item>
-        {/* Add more Carousel.Items for additional images */}
+        {/* Add more Carousel.Items for additional imgs */}
       </Carousel>
     </div>
   );
