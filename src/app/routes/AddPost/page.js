@@ -6,7 +6,7 @@ import CustomFooter from "@/app/components/footer/footer";
 import { useRouter } from "next/navigation";
 import axios from 'axios';
 // Assuming this component is correctly imported in your routing setup
-function AddJobPostForm({ onAddJobPost }) {
+export function AddJobPostForm({ onAddJobPost }) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [email, setEmail] = useState('');
@@ -86,7 +86,6 @@ const handleSubmit = (e) => {
   );
 }
 
-export default AddJobPostForm;
 
 
 function JobPostsList({ jobPosts }) {
