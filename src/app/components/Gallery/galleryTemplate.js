@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import './galleryTemplate.css'; // Import your CSS file for styling
-import Image from 'next/image';
+
 
 const Gallery = () => {
   // Replace these image paths with your actual image paths or URLs
@@ -28,7 +28,7 @@ const Gallery = () => {
       </div>
       <div className="gallery">
         {images.map((image, index) => (
-          <Image key={index} src={image} alt={`Image ${index + 1}`} />
+          <img key={index} src={image} alt={`Image ${index + 1}`} />
         ))}
       </div>
     </div>
