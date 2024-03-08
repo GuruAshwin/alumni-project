@@ -4,19 +4,19 @@ import "./aboutus.css";
 import HeaderTem from "@/app/components/Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomFooter from "@/app/components/footer/footer";
-import useAuth from "../../hooks/useAuth";
-import { useRouter } from "next/navigation";
+// import useAuth from "../../hooks/useAuth";
+// import { useRouter } from "next/navigation";
 
 
 export default function AboutUs(){
 
-    const isAuthenticated=useAuth();
-    const router=useRouter();
+    // const isAuthenticated=useAuth();
+    // const router=useRouter();
 
-    if(!isAuthenticated){
-        router.push('/');
-        return null;
-    }
+    // if(!isAuthenticated){
+    //     router.push('/');
+    //     return null;
+    // }
 
     return(
         <>
