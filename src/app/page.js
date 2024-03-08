@@ -14,10 +14,10 @@ import Gallery from "./components/Gallery/galleryTemplate";
 import { useContext } from 'react';
 import { AuthProvider } from './contexts/AuthContext';
 export default function Home() {
-  const { isUserLoggedIn } = useContext(AuthProvider);
+  // const { isUserLoggedIn } = useContext(AuthProvider);
   return (
     <div className="MainContainer">
-      <HeaderTem isLoggedIn={isUserLoggedIn}></HeaderTem>
+      <HeaderTem></HeaderTem>
       <div>
         <VideoPlayer></VideoPlayer>
       </div>
