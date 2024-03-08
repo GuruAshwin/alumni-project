@@ -23,8 +23,7 @@ export default function LoginScreen(){
             
             const tokenforauth = response.data.token;
             setToken(tokenforauth);
-            localStorage.setItem('isUserLoggedIn', 'true');
-            document.cookie = `token=${tokenforauth}; path=/`;
+            localStorage.setItem('token',token);
             router.push("/");
         })
         .catch(error => {
