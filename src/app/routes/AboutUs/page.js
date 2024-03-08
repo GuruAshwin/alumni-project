@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import "./aboutus.css";
 import HeaderTem from "@/app/components/Header/Header";
