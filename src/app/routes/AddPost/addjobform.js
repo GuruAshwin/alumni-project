@@ -1,16 +1,13 @@
-// src/app/routes/AddPost/addjobform.js
 "use client";
 import React, { useState } from 'react';
 import "./addjobform.css";
-import { useRouter } from "next/navigation";
 import axios from 'axios';
 
-export function AddJobPostForm({ onAddJobPost }) {
+export default function AddJobPostForm() {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [email, setEmail] = useState('');
   const [datePosted, setDatePosted] = useState('');
-  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,7 +21,6 @@ export function AddJobPostForm({ onAddJobPost }) {
     axios.post('http://127.0.0.1:8100/addposts', formData)
       .then(response => {
         alert(`Response from backend: ${JSON.stringify(response.data)}`);
-        onAddJobPost(formData); // Pass form data to the parent component
         setTitle('');
         setDescription('');
         setEmail('');

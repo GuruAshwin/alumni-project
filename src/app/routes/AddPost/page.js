@@ -1,7 +1,5 @@
-// src/app/routes/AddPost/page.js
-
 import React from 'react';
-import AddJobPostForm from './addjobform'; // Assuming AddJobPostForm is in the same directory
+import AddJobPostForm from './addjobform';
 import HeaderTem from "@/app/components/Header/Header";
 import CustomFooter from "@/app/components/footer/footer";
 
@@ -15,8 +13,7 @@ export default function AddPostPage() {
     <>
       <HeaderTem />
       <div>
-        <h1>Add Post Page</h1>
-        <AddJobPostForm onAddJobPost={handleAddJobPost} />
+        <AddJobPostForm />
       </div>
       <CustomFooter />
     </>
