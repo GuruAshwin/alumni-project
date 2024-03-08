@@ -112,7 +112,7 @@ function PostPage() {
 
   const fetchJobPosts = async () => {
     try {
-      const response = await axios.get(`http://127.0.0.1:8100/postlists`);
+      const response = await axios.get(`https://alumni-server-1.onrender.com/postlists`);
       // setJobPosts(response.data); // Set job posts state with data from API
       const resposeData = response.data;
 

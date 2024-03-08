@@ -18,7 +18,7 @@ export default function AddJobPostForm() {
       datePosted
     };
 
-    axios.post('http://127.0.0.1:8100/addposts', formData)
+    axios.post('https://alumni-server-1.onrender.com/addposts', formData)
       .then(response => {
         alert(`Response from backend: ${JSON.stringify(response.data)}`);
         setTitle('');

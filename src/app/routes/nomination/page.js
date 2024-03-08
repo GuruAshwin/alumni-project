@@ -93,7 +93,7 @@ export default function Nomination() {
         e.preventDefault();
 
         if (validateForm()) {
-            axios.post('http://127.0.0.1:8100/nominationdetails', {formData})
+            axios.post('https://alumni-server-1.onrender.com/nominationdetails', {formData})
         .then(response => {
             alert(`Response from backend: ${JSON.stringify(response.data)}`);
         })

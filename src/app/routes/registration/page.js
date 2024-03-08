@@ -72,7 +72,7 @@ export default function RegistrationScreen() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            axios.post('http://127.0.0.1:8100/regestrationdetails', {formData})
+            axios.post('https://alumni-server-1.onrender.com/regestrationdetails', {formData})
             .then(response => {
                 alert(`Response from backend: ${JSON.stringify(response.data)}`);
             })

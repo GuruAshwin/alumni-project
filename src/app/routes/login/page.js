@@ -17,7 +17,7 @@ export default function LoginScreen(){
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     localStorage.setItem('isUserLoggedIn', 'false');
-    axios.post('http://127.0.0.1:8100/harikiran', { username, password })
+    axios.post('https://alumni-server-1.onrender.com/harikiran', { username, password })
         .then(response => {
             // alert(`Response from backend: ${JSON.stringify(response.data)}`);
             
