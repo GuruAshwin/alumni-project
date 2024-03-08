@@ -4,7 +4,7 @@ import HeaderTem from "@/app/components/Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomFooter from "@/app/components/footer/footer";
 import useAuth from "../../hooks/useAuth";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 
 export default function AboutUs(){
